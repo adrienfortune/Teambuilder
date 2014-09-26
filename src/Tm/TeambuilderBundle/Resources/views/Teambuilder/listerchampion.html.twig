@@ -1,0 +1,36 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des champions
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des champions :</h2>
+    <ul>
+        {% for champion in listeChampions %}
+            <li>
+                <div>
+                    <img src="{{ asset(champion.webPath) }}" />
+                    Nom :
+                    {{ champion.nom }}
+                    Caracteristique :
+                    {% for caracteristique in champion.caracteristiques %}
+                       {{ caracteristique.code }}
+                    {% endfor %}
+                    Role :
+                    {% for role in champion.roles %}
+                         {{ role.code }}
+                    {% endfor %}
+                    Type d'attaque :
+                    {% for attaque in champion.typeAttaques %}
+                        {{ attaque.code }}
+                    {% endfor %}
+                    <p><a href="{{ path('tm_teambuilder_champion_modifier', {'id': champion.id}) }}">Modifier le champion</a></p>
+                    <p><a href="{{ path('tm_teambuilder_champion_supprimer', {'id': champion.id}) }}">Supprimer le champion</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,260 @@
+<?php
+
+namespace Tm\TeambuilderBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Regle
+ *
+ * @ORM\Table(name="regle", indexes={@ORM\Index(name="fk_REGLE_OPERATION1_idx", columns={"ID_OPERATION"}), @ORM\Index(name="fk_REGLE_ROLE1_idx", columns={"ID_ROLE"}), @ORM\Index(name="fk_REGLE_TYPE_ATTAQUE1_idx", columns={"ID_TYPE_ATTAQUE"}), @ORM\Index(name="fk_REGLE_CARACTERISTIQUE1_idx", columns={"ID_CARACTERISTIQUE"}), @ORM\Index(name="fk_REGLE_EQUIPE1_idx", columns={"ID_EQUIPE"})})
+ * @ORM\Entity(repositoryClass="Tm\Teambuilder\Entity\RegleRepository")
+ */
+class Regle
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="NOMBRE", type="integer", nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="PRIORITE", type="integer", nullable=false)
+     */
+    private $priorite;
+
+    /**
+     * @var \Operation
+     *
+     * @ORM\ManyToOne(targetEntity="Operation")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="ID_OPERATION", referencedColumnName="ID")
+     * })
+     */
+    private $idOperation;
+
+    /**
+     * @var \Role
+     *
+     * @ORM\ManyToOne(targetEntity="Role")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="ID_ROLE", referencedColumnName="ID")
+     * })
+     */
+    private $idRole;
+
+    /**
+     * @var \TypeAttaque
+     *
+     * @ORM\ManyToOne(targetEntity="TypeAttaque")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="ID_TYPE_ATTAQUE", referencedColumnName="ID")
+     * })
+     */
+    private $idTypeAttaque;
+
+    /**
+     * @var \Caracteristique
+     *
+     * @ORM\ManyToOne(targetEntity="Caracteristique")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="ID_CARACTERISTIQUE", referencedColumnName="ID")
+     * })
+     */
+    private $idCaracteristique;
+
+    /**
+     * @var \Equipe
+     *
+     * @ORM\ManyToOne(targetEntity="Equipe")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="ID_EQUIPE", referencedColumnName="ID")
+     * })
+     */
+    private $idEquipe;
+
+
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nombre
+     *
+     * @param integer $nombre
+     * @return Regle
+     */
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+
+        return $this;
+    }
+
+    /**
+     * Get nombre
+     *
+     * @return integer 
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * Set priorite
+     *
+     * @param integer $priorite
+     * @return Regle
+     */
+    public function setPriorite($priorite)
+    {
+        $this->priorite = $priorite;
+
+        return $this;
+    }
+
+    /**
+     * Get priorite
+     *
+     * @return integer 
+     */
+    public function getPriorite()
+    {
+        return $this->priorite;
+    }
+
+    /**
+     * Set idOperation
+     *
+     * @param \Tm\TeambuilderBundle\Entity\Operation $idOperation
+     * @return Regle
+     */
+    public function setIdOperation(\Tm\TeambuilderBundle\Entity\Operation $idOperation = null)
+    {
+        $this->idOperation = $idOperation;
+
+        return $this;
+    }
+
+    /**
+     * Get idOperation
+     *
+     * @return \Tm\TeambuilderBundle\Entity\Operation 
+     */
+    public function getIdOperation()
+    {
+        return $this->idOperation;
+    }
+
+    /**
+     * Set idRole
+     *
+     * @param \Tm\TeambuilderBundle\Entity\Role $idRole
+     * @return Regle
+     */
+    public function setIdRole(\Tm\TeambuilderBundle\Entity\Role $idRole = null)
+    {
+        $this->idRole = $idRole;
+
+        return $this;
+    }
+
+    /**
+     * Get idRole
+     *
+     * @return \Tm\TeambuilderBundle\Entity\Role 
+     */
+    public function getIdRole()
+    {
+        return $this->idRole;
+    }
+
+    /**
+     * Set idTypeAttaque
+     *
+     * @param \Tm\TeambuilderBundle\Entity\TypeAttaque $idTypeAttaque
+     * @return Regle
+     */
+    public function setIdTypeAttaque(\Tm\TeambuilderBundle\Entity\TypeAttaque $idTypeAttaque = null)
+    {
+        $this->idTypeAttaque = $idTypeAttaque;
+
+        return $this;
+    }
+
+    /**
+     * Get idTypeAttaque
+     *
+     * @return \Tm\TeambuilderBundle\Entity\TypeAttaque 
+     */
+    public function getIdTypeAttaque()
+    {
+        return $this->idTypeAttaque;
+    }
+
+    /**
+     * Set idCaracteristique
+     *
+     * @param \Tm\TeambuilderBundle\Entity\Caracteristique $idCaracteristique
+     * @return Regle
+     */
+    public function setIdCaracteristique(\Tm\TeambuilderBundle\Entity\Caracteristique $idCaracteristique = null)
+    {
+        $this->idCaracteristique = $idCaracteristique;
+
+        return $this;
+    }
+
+    /**
+     * Get idCaracteristique
+     *
+     * @return \Tm\TeambuilderBundle\Entity\Caracteristique 
+     */
+    public function getIdCaracteristique()
+    {
+        return $this->idCaracteristique;
+    }
+
+    /**
+     * Set idEquipe
+     *
+     * @param \Tm\TeambuilderBundle\Entity\Equipe $idEquipe
+     * @return Regle
+     */
+    public function setIdEquipe(\Tm\TeambuilderBundle\Entity\Equipe $idEquipe = null)
+    {
+        $this->idEquipe = $idEquipe;
+
+        return $this;
+    }
+
+    /**
+     * Get idEquipe
+     *
+     * @return \Tm\TeambuilderBundle\Entity\Equipe 
+     */
+    public function getIdEquipe()
+    {
+        return $this->idEquipe;
+    }
+}

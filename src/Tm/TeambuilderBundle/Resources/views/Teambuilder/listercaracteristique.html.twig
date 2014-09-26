@@ -1,0 +1,27 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des caractéristiques des champions
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des caractéristiques des champions :</h2>
+
+    <ul>
+        {% for caracteristique in listeCaracteristiques %}
+            <li>
+                <div>
+                    {{ caracteristique.id }}
+                    Libellé :
+                    {{ caracteristique.libelle }}
+                    Code :
+                    {{ caracteristique.code }}
+                    <p><a href="{{ path('tm_teambuilder_caracteristique_modifier', {'id': caracteristique.id}) }}">Modifier la caractéristique</a></p>
+                    <p><a href="{{ path('tm_teambuilder_caracteristique_supprimer', {'id': caracteristique.id}) }}">Supprimer la caractéristique</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

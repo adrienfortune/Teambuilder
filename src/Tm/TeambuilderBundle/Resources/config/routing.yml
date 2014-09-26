@@ -1,0 +1,103 @@
+tm_teambuilder_champion_lister:
+    path:  /champion/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listerchampion }
+
+tm_teambuilder_champion_ajouter:
+    path:  /champion/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajouterchampion }
+
+tm_teambuilder_champion_modifier:
+    path:  /champion/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifierchampion }
+
+tm_teambuilder_champion_supprimer:
+    path:  /champion/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimerchampion }
+
+tm_teambuilder_role_lister:
+    path:  /role/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listerrole }
+
+tm_teambuilder_role_ajouter:
+    path:  /role/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajouterrole }
+
+tm_teambuilder_role_modifier:
+    path:  /role/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifierrole }
+
+tm_teambuilder_role_supprimer:
+    path:  /role/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimerrole }
+
+tm_teambuilder_caracteristique_lister:
+    path:  /caracteristique/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listercaracteristique }
+
+tm_teambuilder_caracteristique_ajouter:
+    path:  /caracteristique/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajoutercaracteristique }
+
+tm_teambuilder_caracteristique_modifier:
+    path:  /caracteristique/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifiercaracteristique }
+
+tm_teambuilder_caracteristique_supprimer:
+    path:  /caracteristique/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimercaracteristique }
+
+tm_teambuilder_typeattaque_lister:
+    path:  /typeattaque/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listertypeattaque }
+
+tm_teambuilder_typeattaque_ajouter:
+    path:  /typeattaque/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajoutertypeattaque }
+
+tm_teambuilder_typeattaque_modifier:
+    path:  /typeattaque/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifiertypeattaque }
+
+tm_teambuilder_typeattaque_supprimer:
+    path:  /typeattaque/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimertypeattaque }
+
+tm_teambuilder_operation_lister:
+    path:  /operation/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listeroperation }
+
+tm_teambuilder_operation_ajouter:
+    path:  /operation/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajouteroperation }
+
+tm_teambuilder_operation_modifier:
+    path:  /operation/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifieroperation }
+
+tm_teambuilder_operation_supprimer:
+    path:  /operation/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimeroperation }
+
+tm_teambuilder_regle_lister:
+    path:  /regle/lister
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:listerregle }
+
+tm_teambuilder_regle_ajouter:
+    path:  /regle/ajouter
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:ajouterregle }
+
+tm_teambuilder_regle_modifier:
+    path:  /regle/modifier/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:modifierregle }
+
+tm_teambuilder_regle_supprimer:
+    path:  /regle/supprimer/{id}
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimerregle }
+
+tm_teambuilder_regle_appliquer:
+    path:  /regle/appliquer
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:appliquerregles }
+
+tm_teambuilder_ajax_recherchechampion:
+    path:  /ajax/getsuggestionchampion
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:getsuggestionchampionajax }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Regle" table="regle">
+    <indexes>
+      <index name="fk_REGLE_OPERATION1_idx" columns="ID_OPERATION"/>
+      <index name="fk_REGLE_ROLE1_idx" columns="ID_ROLE"/>
+      <index name="fk_REGLE_TYPE_ATTAQUE1_idx" columns="ID_TYPE_ATTAQUE"/>
+      <index name="fk_REGLE_CARACTERISTIQUE1_idx" columns="ID_CARACTERISTIQUE"/>
+      <index name="fk_REGLE_EQUIPE1_idx" columns="ID_EQUIPE"/>
+    </indexes>
+    <id name="id" type="integer" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombre" type="integer" column="NOMBRE" nullable="false"/>
+    <field name="priorite" type="integer" column="PRIORITE" nullable="false"/>
+    <many-to-one field="idEquipe" target-entity="Equipe">
+      <join-columns>
+        <join-column name="ID_EQUIPE" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idCaracteristique" target-entity="Caracteristique">
+      <join-columns>
+        <join-column name="ID_CARACTERISTIQUE" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idTypeAttaque" target-entity="TypeAttaque">
+      <join-columns>
+        <join-column name="ID_TYPE_ATTAQUE" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idRole" target-entity="Role">
+      <join-columns>
+        <join-column name="ID_ROLE" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idOperation" target-entity="Operation">
+      <join-columns>
+        <join-column name="ID_OPERATION" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

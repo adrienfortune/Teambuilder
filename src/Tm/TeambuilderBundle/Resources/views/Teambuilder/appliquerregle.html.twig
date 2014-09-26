@@ -1,0 +1,20 @@
+
+
+        {% extends "TmTeambuilderBundle::layout.html.twig" %}
+            {% block title %}
+                Visualisation des champion suggérés
+            {% endblock %}
+
+            {% block tmteambuilder_body %}
+                <h2>Champions suggérés :</h2>
+
+                <form id="recherche-champion" method="post" {{ form_enctype(form) }}>
+                    {{ form_errors(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_rest(form) }}
+                </form>
+                <div class="champion-selecteur"></div>
+            {% endblock %}
+
+
+

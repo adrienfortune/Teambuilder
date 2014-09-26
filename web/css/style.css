@@ -1,0 +1,59 @@
+.equipe {
+    height: 300px;
+    width: 200px;
+    float: left;
+}
+.bleu {
+    height: 300px;
+    width: 200px;
+    float: left;
+}
+.violette {
+    height: 300px;
+    width: 200px;
+    float: left;
+}
+
+.liste-champion {
+    width: 400px;
+    float: left;
+}
+.liste-to-filter li{
+    display: list-item;
+}
+.liste-to-filter ul{
+    display: block;
+}
+.liste-to-filter>* {
+    float: left;
+}
+.champion-selecteur {
+    width: 100%;
+}
+.inselectionnable {
+    background-color:red;
+}
+
+.selectionnable {
+    cursor: pointer;
+}
+.champion-selecteur .equipe li {
+    background-color:green;
+    height: 125px;
+    line-height: 125px;
+}
+.champion-selecteur .bleu li {
+    background-color:green;
+    height: 125px;
+    line-height: 125px;
+}
+.champion-selecteur .violette li {
+    background-color:green;
+    height: 125px;
+    line-height: 125px;
+}
+
+.suggest {
+    background-color: #2ecc71;
+    color: white;
+}

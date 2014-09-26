@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Champion" table="champion">
+    <indexes>
+      <index name="fk_CHAMPION_ROLE1_idx" columns="ID_ROLE"/>
+    </indexes>
+    <id name="id" type="integer" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nom" type="string" column="NOM" length="64" nullable="false"/>
+    <field name="nomFichierImage" type="string" column="NOM_FICHIER_IMAGE" length="255" nullable="false"/>
+    <many-to-one field="idRole" target-entity="Role">
+      <join-columns>
+        <join-column name="ID_ROLE" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-many field="idTypeAttaque" target-entity="TypeAttaque" inversed-by="idChampion">
+      <join-table name="champion_type_attaque">
+        <join-columns>
+          <join-column name="ID_CHAMPION" referenced-column-name="ID"/>
+        </join-columns>
+        <inverse-join-columns>
+          <join-column name="ID_TYPE_ATTAQUE" referenced-column-name="ID"/>
+        </inverse-join-columns>
+      </join-table>
+    </many-to-many>
+    <many-to-many field="idCaracteristique" target-entity="Caracteristique" inversed-by="idChampion">
+      <join-table name="champion_caracteristique">
+        <join-columns>
+          <join-column name="ID_CHAMPION" referenced-column-name="ID"/>
+        </join-columns>
+        <inverse-join-columns>
+          <join-column name="ID_CARACTERISTIQUE" referenced-column-name="ID"/>
+        </inverse-join-columns>
+      </join-table>
+    </many-to-many>
+    <many-to-many field="idContre" target-entity="Champion" inversed-by="idChampion">
+      <join-table name="champion_contre">
+        <join-columns>
+          <join-column name="ID_CHAMPION" referenced-column-name="ID"/>
+        </join-columns>
+        <inverse-join-columns>
+          <join-column name="ID_CONTRE" referenced-column-name="ID"/>
+        </inverse-join-columns>
+      </join-table>
+    </many-to-many>
+  </entity>
+</doctrine-mapping>

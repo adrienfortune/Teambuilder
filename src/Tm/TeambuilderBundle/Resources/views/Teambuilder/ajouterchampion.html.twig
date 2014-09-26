@@ -1,0 +1,14 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Ajouter - {{ parent() }}
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Ajouter un champion :</h2>
+
+{% include "TmTeambuilderBundle:Teambuilder:formulaire.html.twig" %}
+
+{% endblock %}

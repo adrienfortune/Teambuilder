@@ -1,0 +1,27 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des opérations
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des opérations :</h2>
+    <ul>
+        {% for operation in listeOperations %}
+            <li>
+                <div>
+                    {{ operation.id }}
+                    Libellé :
+                    {{ operation.libelle }}
+                    Code :
+                    {{ operation.code }}
+                    <p><a href="{{ path('tm_teambuilder_operation_modifier', {'id': operation.id}) }}">Modifier l'opération</a></p>
+                    <p><a href="{{ path('tm_teambuilder_operation_supprimer', {'id': operation.id}) }}">Supprimer l'opération</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

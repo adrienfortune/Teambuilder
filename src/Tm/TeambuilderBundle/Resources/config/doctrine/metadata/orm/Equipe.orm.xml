@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Equipe" table="equipe">
+    <indexes>
+      <index name="fk_EQUIPE_UTILISATEUR1_idx" columns="ID_UTILISATEUR"/>
+    </indexes>
+    <id name="id" type="integer" column="ID">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="libelle" type="string" column="LIBELLE" length="64" nullable="false"/>
+    <field name="isPublic" type="boolean" column="IS_PUBLIC" nullable="false"/>
+    <field name="dateCreation" type="datetime" column="DATE_CREATION" nullable="false"/>
+    <many-to-one field="idUtilisateur" target-entity="Utilisateur">
+      <join-columns>
+        <join-column name="ID_UTILISATEUR" referenced-column-name="ID"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

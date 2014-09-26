@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>{% block title %}{% endblock %}</title>
+
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
+    {% endblock %}
+</head>
+
+<body>
+<div class="container-fluid">
+    <div id="header" class="hero-unit">
+        <h1>Teambuilder</h1>
+    </div>
+
+    <div class="row-fluid">
+        <div id="menu" class="span3">
+            <h3>Navigation</h3>
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="{{ path('tm_teambuilder_champion_lister') }}">Liste des champions</a></li>
+                <li><a href="{{ path('tm_teambuilder_champion_ajouter') }}">Ajouter un champion</a></li>
+                <li><a href="{{ path('tm_teambuilder_role_lister') }}">Liste des rôles</a></li>
+                <li><a href="{{ path('tm_teambuilder_role_ajouter') }}">Ajouter un rôle</a></li>
+                <li><a href="{{ path('tm_teambuilder_caracteristique_lister') }}">Liste des caractéritiques</a></li>
+                <li><a href="{{ path('tm_teambuilder_caracteristique_ajouter') }}">Ajouter une caractéritique</a></li>
+                <li><a href="{{ path('tm_teambuilder_typeattaque_lister') }}">Liste des types d'attaques</a></li>
+                <li><a href="{{ path('tm_teambuilder_typeattaque_ajouter') }}">Ajouter un type d'attaque</a></li>
+                <li><a href="{{ path('tm_teambuilder_operation_lister') }}">Liste des opérations</a></li>
+                <li><a href="{{ path('tm_teambuilder_operation_ajouter') }}">Ajouter une opération</a></li>
+                <li><a href="{{ path('tm_teambuilder_regle_lister') }}">Liste des règles</a></li>
+                <li><a href="{{ path('tm_teambuilder_regle_ajouter') }}">Ajouter une règle</a></li>
+            </ul>
+        </div>
+        <div id="content" class="span9">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+    </footer>
+</div>
+
+{% block javascripts %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.liveFilter.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}" type="text/javascript"></script>
+{% endblock %}
+
+</body>
+</html>

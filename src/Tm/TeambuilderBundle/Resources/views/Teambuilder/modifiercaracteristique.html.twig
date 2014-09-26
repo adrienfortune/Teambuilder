@@ -1,0 +1,13 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier - {{ parent() }}
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Modifier une caractéristique :</h2>
+    {% include "TmTeambuilderBundle:Teambuilder:formulaire.html.twig" %}
+
+{% endblock %}

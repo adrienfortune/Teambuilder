@@ -1,0 +1,7 @@
+parameters:
+
+
+services:
+  tm_teambuilder.regles:
+    class: Tm\TeambuilderBundle\Regles\Regles
+    arguments: ['t']

@@ -1,0 +1,27 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des rôles des champions
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des rôles des champions :</h2>
+    <ul>
+        {% for role in listeRoles %}
+            <li>
+                <div>
+                    {{ role.id }}
+                    Libellé :
+                    {{ role.libelle }}
+                    Code :
+                    {{ role.code }}
+                    <p><a href="{{ path('tm_teambuilder_role_modifier', {'id': role.id}) }}">Modifier le rôle</a></p>
+                    <p><a href="{{ path('tm_teambuilder_role_supprimer', {'id': role.id}) }}">Supprimer le rôle</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

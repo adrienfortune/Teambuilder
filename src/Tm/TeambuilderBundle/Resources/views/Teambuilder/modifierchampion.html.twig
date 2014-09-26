@@ -1,0 +1,14 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Modifier - {{ parent() }}
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Modifier un champion :</h2>
+    <img src="{{ asset(champion.webPath) }}" />
+    {% include "TmTeambuilderBundle:Teambuilder:formulaire.html.twig" %}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+
+    {#<div class="equipe-selecteur">#}
+        {#Sélectionner une équipe :#}
+        {#<input type= "radio" name="equipe" value="BLEU" checked="checked">#}
+        {#Equipe bleu#}
+        {#<input type= "radio" name="equipe" value="VIOLETTE">#}
+        {#Equipe violette#}
+        {#<br />#}
+        {#<br />#}
+        {#<br />#}
+    {#</div>#}
+    <div class="{{ monEquipe }} mon-equipe">
+        <ul class="selectionne">
+            {% for i in 0..4  %}
+                <li id="champion-id-{{ i }}">
+                    <select class="role-champion">
+                        {% for role in listeRoles %}
+                            <option value="{{ role.code }}">{{ role.code }}</option>
+                        {% endfor %}
+                    </select>
+                    <button type="button">Suggérer des champions</button>
+                </li>
+            {% endfor %}
+        </ul>
+        <ul class="bannis">
+            {% for i in 0..2  %}
+                <li id="champion-id-{{ i }}"></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="liste-champion">
+        <ul id="list-to-filter">
+            {% for champion in listeChampions %}
+                <li>
+                    <img src="{{ asset(champion.webPath) }}" title="{{ champion.nom }}" class="selectionnable" data-champion-nom="{{ champion.nom }}" data-champion-id="{{ champion.id }}" />
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="{{ equipeAdverse }}">
+        <ul class="selectionne">
+            {% for i in 0..4  %}
+                <li id="champion-id-{{ i }}"></li>
+            {% endfor %}
+        </ul>
+        <ul class="bannis">
+            {% for i in 0..2  %}
+                <li id="champion-id-{{ i }}"></li>
+            {% endfor %}
+        </ul>
+    </div>

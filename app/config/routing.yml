@@ -1,0 +1,4 @@
+tm_teambuilder:
+    resource: "@TmTeambuilderBundle/Resources/config/routing.yml"
+    prefix:   /teambuilder
+

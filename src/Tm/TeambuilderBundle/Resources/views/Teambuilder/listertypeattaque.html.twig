@@ -1,0 +1,26 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des types d'attaques des champions
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des types d'attaques des champions :</h2>
+    <ul>
+        {% for typeAttaque in listeTypeAttaques %}
+            <li>
+                <div>
+                    {{ typeAttaque.id }}
+                    Libellé :
+                    {{ typeAttaque.libelle }}
+                    Code :
+                    {{ typeAttaque.code }}
+                    <p><a href="{{ path('tm_teambuilder_typeattaque_modifier', {'id': typeAttaque.id}) }}">Modifier le type d'attaque</a></p>
+                    <p><a href="{{ path('tm_teambuilder_typeattaque_supprimer', {'id': typeAttaque.id}) }}">Supprimer le type d'attaque</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

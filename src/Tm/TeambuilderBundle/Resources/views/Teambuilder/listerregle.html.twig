@@ -1,0 +1,35 @@
+
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+
+{% block title %}
+    Visualisation de la liste des règles
+{% endblock %}
+
+{% block tmteambuilder_body %}
+
+    <h2>Liste des règles :</h2>
+    <ul>
+        {% for regle in listeRegles %}
+            <li>
+                <div>
+                    {{ regle.operation.code }}
+                    {{ regle.nombre }}
+                    {% if regle.typeAttaque is not null %}
+                        {{ regle.typeAttaque.code }}
+                    {% endif %}
+                    {% if regle.role is not null %}
+                        {{ regle.typeAttaque.code }}
+                    {% endif %}
+                    {% if regle.caracteristique is not null %}
+                        {{ regle.typeAttaque.code }}
+                    {% endif %}
+
+
+                    <p><a href="{{ path('tm_teambuilder_regle_modifier', {'id': regle.id}) }}">Modifier la règle</a></p>
+                    <p><a href="{{ path('tm_teambuilder_regle_supprimer', {'id': regle.id}) }}">Supprimer la règle</a></p>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
