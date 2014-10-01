@@ -5,13 +5,12 @@ use Prophecy\Argument;
 
 class TeamBuilderSpec extends ObjectBehavior
 {
-    function let()
+    function let(array $listeRegles, array $listeChampion)
     {
-        $this->beConstructedWith([], []);
     }
 
-    function it_is_initializable()
+    function it_test()
     {
-        $this->shouldHaveType('Tm\TeambuilderBundle\Regles\TeamBuilder');
+        $this->test()->shouldReturn('test');
     }
 }
