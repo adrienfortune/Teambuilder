@@ -36,10 +36,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeamBuilder.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TeamBuilder.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="46" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.72782874" vertical-offset="765" max-vertical-offset="3621">
+            <state line="89" column="46" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3621">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="130" column="96" selection-start="4094" selection-end="4094" vertical-scroll-proportion="0.55453616" vertical-offset="1666" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -99,13 +108,13 @@
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/getteambuilderajax.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/TypeAttaque.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/listerregle.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/script.js" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php" />
+        <option value="$PROJECT_DIR$/web/js/script.js" />
       </list>
     </option>
   </component>
@@ -179,6 +188,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,13 +635,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Operation.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
@@ -677,7 +711,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="46" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.72782874" vertical-offset="765" max-vertical-offset="3621">
+        <state line="89" column="46" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3621">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="96" selection-start="4094" selection-end="4094" vertical-scroll-proportion="0.55453616" vertical-offset="1666" max-vertical-offset="3638">
           <folding />
         </state>
       </provider>
