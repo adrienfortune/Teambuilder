@@ -143,18 +143,18 @@ $(function() {
     });
 
     $('.mon-equipe button').live('click', function() {
-//        role = $(this).prev().val();
-//
-//        $.each(historique, function( key, value ) {
-//
-//            if(value['action'] == 'CREER_REGLE') {
-//                delete historique[key];
-//            }
-//        });
-//
-//        historique = array_values(historique);
-//
-//        historique.push({'action':'CREER_REGLE', 'role':role, 'operation':'EGAL', 'priorite':1, 'nombre':1});
+        role = $(this).prev().val();
+
+        $.each(historique, function( key, value ) {
+
+            if(value['action'] == 'CREER_REGLE') {
+                delete historique[key];
+            }
+        });
+
+        historique = array_values(historique);
+
+        historique.push({'action':'DEFINIR_ROLE', 'role':role});
 //        console.log(historique);
 //        console.log('zdzqdq');
         console.log(historique);

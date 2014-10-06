@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" line="379" />
+    <bookmark url="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" line="356" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811082d4-a8f6-4d65-b3d6-1b1d938f8a7d" name="Default" comment="" />
@@ -30,16 +30,66 @@
       <file leaf-file-name="TeamBuilder.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="42" selection-start="2504" selection-end="2518" vertical-scroll-proportion="0.0" vertical-offset="1433" max-vertical-offset="3638">
-              <folding />
+            <state line="21" column="45" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3927">
+              <folding>
+                <element signature="e#46#87#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Regle.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TeambuilderController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="98" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.12293389" vertical-offset="1241" max-vertical-offset="10846">
+              <folding>
+                <element signature="e#2039#2101#0" expanded="true" />
+                <element signature="e#2921#2979#0" expanded="true" />
+                <element signature="e#5180#5238#0" expanded="true" />
+                <element signature="e#5796#5828#1" expanded="true" />
+                <element signature="e#5886#5945#0" expanded="true" />
+                <element signature="e#6488#6520#1" expanded="true" />
+                <element signature="e#7262#7294#1" expanded="true" />
+                <element signature="e#7354#7414#0" expanded="true" />
+                <element signature="e#8005#8033#1" expanded="true" />
+                <element signature="e#8092#8147#0" expanded="true" />
+                <element signature="e#8453#8507#0" expanded="true" />
+                <element signature="e#8987#9015#1" expanded="true" />
+                <element signature="e#9712#9740#1" expanded="true" />
+                <element signature="e#9798#9854#0" expanded="true" />
+                <element signature="e#10503#10542#1" expanded="true" />
+                <element signature="e#10601#10667#0" expanded="true" />
+                <element signature="e#11006#11071#0" expanded="true" />
+                <element signature="e#11663#11702#1" expanded="true" />
+                <element signature="e#12512#12551#1" expanded="true" />
+                <element signature="e#12609#12676#0" expanded="true" />
+                <element signature="e#13312#13347#1" expanded="true" />
+                <element signature="e#13405#13467#0" expanded="true" />
+                <element signature="e#13794#13855#0" expanded="true" />
+                <element signature="e#14414#14449#1" expanded="true" />
+                <element signature="e#15226#15261#1" expanded="true" />
+                <element signature="e#15319#15382#0" expanded="true" />
+                <element signature="e#16002#16035#1" expanded="true" />
+                <element signature="e#16094#16154#0" expanded="true" />
+                <element signature="e#16475#16534#0" expanded="true" />
+                <element signature="e#17066#17099#1" expanded="true" />
+                <element signature="e#17849#17882#1" expanded="true" />
+                <element signature="e#17940#18001#0" expanded="true" />
+                <element signature="e#18596#18625#1" expanded="true" />
+                <element signature="e#18684#18740#0" expanded="true" />
+                <element signature="e#19048#19103#0" expanded="true" />
+                <element signature="e#19595#19624#1" expanded="true" />
+                <element signature="e#20334#20363#1" expanded="true" />
+                <element signature="e#20421#20478#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Regle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="366" column="60" selection-start="8598" selection-end="8598" vertical-scroll-proportion="0.6136364" vertical-offset="5594" max-vertical-offset="6562">
+            <state line="358" column="5" selection-start="8236" selection-end="8236" vertical-scroll-proportion="0.0" vertical-offset="5559" max-vertical-offset="6562">
               <folding />
             </state>
           </provider>
@@ -48,16 +98,16 @@
       <file leaf-file-name="Champion.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Champion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="423" column="20" selection-start="9373" selection-end="9373" vertical-scroll-proportion="0.0" vertical-offset="5895" max-vertical-offset="7973">
+            <state line="423" column="20" selection-start="9373" selection-end="9373" vertical-scroll-proportion="0.0" vertical-offset="6048" max-vertical-offset="7973">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeambuilderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="53" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="11237">
+            <state line="157" column="34" selection-start="4801" selection-end="4801" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -67,7 +117,14 @@
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/listerregle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="46" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-              <folding />
+              <folding>
+                <element signature="e#13#50#0" expanded="false" />
+                <element signature="e#849#878#0" expanded="false" />
+                <element signature="e#970#1000#0" expanded="false" />
+                <marker date="1412601362592" expanded="true" signature="202:1122" placeholder="..." />
+                <marker date="1412601362592" expanded="true" signature="258:1091" placeholder="..." />
+                <marker date="1412601362592" expanded="true" signature="280:1073" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,15 +142,6 @@
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="0" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -158,17 +206,17 @@
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/getteambuilderajax.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/TypeAttaque.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" />
         <option value="$PROJECT_DIR$/app/config/routing_dev.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/web/js/script.js" />
         <option value="$PROJECT_DIR$/spec/Tm/TeambuilderBundle/Regles/TeamBuilderSpec.php" />
         <option value="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/spec/teambuilder_suiteSpec.php" />
         <option value="$PROJECT_DIR$/vendor/phpspec/phpspec/phpspec.yml" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/listerregle.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/ChampionRepository.php" />
-        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php" />
+        <option value="$PROJECT_DIR$/web/js/script.js" />
+        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php" />
+        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" />
       </list>
     </option>
   </component>
@@ -860,21 +908,14 @@
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/listerregle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="46" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="0" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="3638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="53" selection-start="1569" selection-end="1569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="11237">
-          <folding />
+          <folding>
+            <element signature="e#13#50#0" expanded="false" />
+            <element signature="e#849#878#0" expanded="false" />
+            <element signature="e#970#1000#0" expanded="false" />
+            <marker date="1412601362592" expanded="true" signature="202:1122" placeholder="..." />
+            <marker date="1412601362592" expanded="true" signature="258:1091" placeholder="..." />
+            <marker date="1412601362592" expanded="true" signature="280:1073" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,17 +926,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="42" selection-start="2504" selection-end="2518" vertical-scroll-proportion="0.0" vertical-offset="1433" max-vertical-offset="3638">
+        <state line="358" column="5" selection-start="8236" selection-end="8236" vertical-scroll-proportion="0.0" vertical-offset="5559" max-vertical-offset="6562">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="366" column="60" selection-start="8598" selection-end="8598" vertical-scroll-proportion="0.6136364" vertical-offset="5594" max-vertical-offset="6562">
+        <state line="157" column="34" selection-start="4801" selection-end="4801" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="3638">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3927">
+          <folding>
+            <element signature="e#46#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.12293389" vertical-offset="1241" max-vertical-offset="10846">
+          <folding>
+            <element signature="e#2039#2101#0" expanded="true" />
+            <element signature="e#2921#2979#0" expanded="true" />
+            <element signature="e#5180#5238#0" expanded="true" />
+            <element signature="e#5796#5828#1" expanded="true" />
+            <element signature="e#5886#5945#0" expanded="true" />
+            <element signature="e#6488#6520#1" expanded="true" />
+            <element signature="e#7262#7294#1" expanded="true" />
+            <element signature="e#7354#7414#0" expanded="true" />
+            <element signature="e#8005#8033#1" expanded="true" />
+            <element signature="e#8092#8147#0" expanded="true" />
+            <element signature="e#8453#8507#0" expanded="true" />
+            <element signature="e#8987#9015#1" expanded="true" />
+            <element signature="e#9712#9740#1" expanded="true" />
+            <element signature="e#9798#9854#0" expanded="true" />
+            <element signature="e#10503#10542#1" expanded="true" />
+            <element signature="e#10601#10667#0" expanded="true" />
+            <element signature="e#11006#11071#0" expanded="true" />
+            <element signature="e#11663#11702#1" expanded="true" />
+            <element signature="e#12512#12551#1" expanded="true" />
+            <element signature="e#12609#12676#0" expanded="true" />
+            <element signature="e#13312#13347#1" expanded="true" />
+            <element signature="e#13405#13467#0" expanded="true" />
+            <element signature="e#13794#13855#0" expanded="true" />
+            <element signature="e#14414#14449#1" expanded="true" />
+            <element signature="e#15226#15261#1" expanded="true" />
+            <element signature="e#15319#15382#0" expanded="true" />
+            <element signature="e#16002#16035#1" expanded="true" />
+            <element signature="e#16094#16154#0" expanded="true" />
+            <element signature="e#16475#16534#0" expanded="true" />
+            <element signature="e#17066#17099#1" expanded="true" />
+            <element signature="e#17849#17882#1" expanded="true" />
+            <element signature="e#17940#18001#0" expanded="true" />
+            <element signature="e#18596#18625#1" expanded="true" />
+            <element signature="e#18684#18740#0" expanded="true" />
+            <element signature="e#19048#19103#0" expanded="true" />
+            <element signature="e#19595#19624#1" expanded="true" />
+            <element signature="e#20334#20363#1" expanded="true" />
+            <element signature="e#20421#20478#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -92,35 +92,16 @@ class TeambuilderController extends Controller
             $em = $this->getDoctrine()->getManager();
             $championRepository = $em->getRepository('TmTeambuilderBundle:Champion');
             $regleRepository = $em->getRepository('TmTeambuilderBundle:Regle');
-            $roleRepository = $em->getRepository('TmTeambuilderBundle:Role');
-            $operationRepository = $em->getRepository('TmTeambuilderBundle:Operation');
             $listeRegles = $regleRepository->findAll();
             $listeChampions =  $championRepository->findAll();
 
-            $regle = new Regle();
-
-
-
-//            foreach($actions as $key => &$action) {
-
-//                if($action['action'] == TeamBuilder::ACTION_CREER_REGLE) {
-////                    $regle->setRole( $roleRepository->findOneByCode($action['role']));
-////                    $regle->setNombre($action['nombre']);
-////                    $regle->setPriorite($action['priorite']);
-////                    $regle->setOperation($operationRepository->findOneByCode($action['operation']));
-////                    unset($action[$key]);
-//                }
-//            }
-
-
-            //$listeRegles[] = $regle;
-//            \Doctrine\Common\Util\Debug::dump($listeRegles);
-//            die;
-
-
             $teamBuilder = new TeamBuilder($listeRegles, $listeChampions);
 
-            foreach($actions as $action) {
+            foreach($actions as $key => $action) {
+                if($action['action'] == TeamBuilder::ACTION_DEFINIR_ROLE) {
+                    $role = $action['role'];
+                    continue;
+                }
                 $champion = $championRepository->find($action['id_champion']);
 
                 if($champion === null) {
@@ -130,11 +111,7 @@ class TeambuilderController extends Controller
                 $teamBuilder->appliquerAction($action, $champion);
             }
 
-//            var_dump($actions);
-            \Doctrine\Common\Util\Debug::dump($teamBuilder->getMesChampions());
-//            die;
-
-            $listeChampionsSuggeres = $teamBuilder->getSuggestions();
+            $listeChampionsSuggeres = $teamBuilder->getSuggestions($role);
 
             /** @var Champion $championSuggere */
             foreach($listeChampionsSuggeres as $championSuggere) {

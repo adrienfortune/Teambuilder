@@ -2,6 +2,7 @@
 
 use Tm\TeambuilderBundle\Entity\Champion;
 use Tm\TeambuilderBundle\Entity\Regle;
+use Tm\TeambuilderBundle\Entity\Role;
 use Tm\TeambuilderBundle\Regles\Exception\ChampionIntrouvableException;
 
 /**
@@ -18,7 +19,7 @@ class TeamBuilder
 
     const ACTION_CHOISIR = 'CHOISIR';
 
-    const ACTION_CREER_REGLE = 'CREER_REGLE';
+    const ACTION_DEFINIR_ROLE = 'DEFINIR_ROLE';
 
 
     /**
@@ -98,17 +99,31 @@ class TeamBuilder
      * Renvoi tous les champions qui passe encore les règles optimales
      * @return array
      */
-    public function getSuggestions()
+    public function getSuggestions($role = null)
     {
 
         $this->isEquipeOptimale();
 
         /** @var Champion $champion */
         foreach ($this->getChampionsRestant() as $champion) {
+
+            $hasRoleRecherche = false;
+            foreach($champion->getRoles() as $roleChampion) {
+                /** @var Role $roleChampion */
+                if($roleChampion->getCode() == $role) {
+                    $hasRoleRecherche = true;
+                }
+            }
+
+            if(!$hasRoleRecherche) {
+                $this->supprimerChampion($champion);
+                continue;
+            }
+
             /** @var Regle $regle */
             foreach ($this->listeRegles as $regle) {
                 $nbRoles = count($champion->getRoles());
-                if ($regle->testSuggestion($champion) && !$regle->testNombreOccurences() && $nbRoles == 1) {
+                if ($regle->testSuggestion($champion) && !$regle->testNombreOccurences()) {
                     $this->supprimerChampion($champion);
                     break;
                 }
@@ -119,7 +134,7 @@ class TeamBuilder
     }
 
     /**
-     *
+     * Réinitialise le compteur pour chacunes des diférentes règles
      */
     private function flush()
     {

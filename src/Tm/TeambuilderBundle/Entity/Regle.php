@@ -360,11 +360,11 @@ class Regle
 
         switch ($this->operation->getCode()) {
             case Operation::TYPE_AU_MOINS :
-                    return ($this->count) >= $this->getNombre();
+                    return ($this->count + 1) >= $this->getNombre();
             case Operation::TYPE_AU_PLUS :
-                return ($this->count) <= $this->getNombre();
+                return ($this->count + 1) <= $this->getNombre();
             case Operation::TYPE_EGAL :
-                return ($this->count) == $this->getNombre();
+                return ($this->count + 1) == $this->getNombre();
         }
 
         return false;
