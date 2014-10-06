@@ -346,12 +346,8 @@ class Regle
         if ($prisEnCompte && $testCritere) {
             $this->count++;
         }
-//        var_dump($prisEnCompte);
-//        var_dump($champion->getNom());
-//        var_dump($this->count);
-//        var_dump($this->testNombreOccurences());
-//        var_dump($testCritere);
-        return $testCritere && $this->testNombreOccurences();
+
+        return $testCritere;
     }
 
     public function testSuggestion(Champion $champion)
@@ -359,16 +355,16 @@ class Regle
         return $this->test($champion, false);
     }
 
-    protected function testNombreOccurences()
+    public function testNombreOccurences()
     {
 
         switch ($this->operation->getCode()) {
             case Operation::TYPE_AU_MOINS :
-                return ($this->count + 1 ) >= $this->getNombre();
+                    return ($this->count) >= $this->getNombre();
             case Operation::TYPE_AU_PLUS :
-                return ($this->count + 1) <= $this->getNombre();
+                return ($this->count) <= $this->getNombre();
             case Operation::TYPE_EGAL :
-                return ($this->count + 1) == $this->getNombre();
+                return ($this->count) == $this->getNombre();
         }
 
         return false;

@@ -100,7 +100,6 @@ class TeamBuilder
      */
     public function getSuggestions()
     {
-        $championsSuggeres = [];
 
         $this->isEquipeOptimale();
 
@@ -108,13 +107,15 @@ class TeamBuilder
         foreach ($this->getChampionsRestant() as $champion) {
             /** @var Regle $regle */
             foreach ($this->listeRegles as $regle) {
-                if ($regle->testSuggestion($champion)) {
-                    $championsSuggeres[$champion->getId()] = $champion;
+                $nbRoles = count($champion->getRoles());
+                if ($regle->testSuggestion($champion) && !$regle->testNombreOccurences() && $nbRoles == 1) {
+                    $this->supprimerChampion($champion);
+                    break;
                 }
             }
         }
 
-        return $championsSuggeres;
+        return $this->listeChampions;
     }
 
     /**

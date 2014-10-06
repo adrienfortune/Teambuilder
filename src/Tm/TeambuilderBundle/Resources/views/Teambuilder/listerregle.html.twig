@@ -12,16 +12,16 @@
         {% for regle in listeRegles %}
             <li>
                 <div>
-                    {{ regle.operation.code }}
+                    {{ regle.operation.libelle }}
                     {{ regle.nombre }}
                     {% if regle.typeAttaque is not null %}
-                        {{ regle.typeAttaque.code }}
+                        {{ regle.typeAttaque.libelle }}
                     {% endif %}
                     {% if regle.role is not null %}
-                        {{ regle.typeAttaque.code }}
+                        {{ regle.role.libelle }}
                     {% endif %}
                     {% if regle.caracteristique is not null %}
-                        {{ regle.typeAttaque.code }}
+                        {{ regle.caracteristique.libelle }}
                     {% endif %}
 
 
