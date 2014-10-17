@@ -24,6 +24,7 @@
         if (options.filterChildSelector) el = el.find(options.filterChildSelector);
         var filter = options.filter;
         $(inputEl).keyup(function(){
+            $(inputEl).attr("placeholder", "Chercher un champion...");
             var val = $(this).val();
             var contains = el.filter(function(){
                 return filter(this, val);

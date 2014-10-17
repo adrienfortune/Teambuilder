@@ -30,7 +30,7 @@ $(function() {
 
         var contains = $('.champion-list .suggest');
         var containsNot = $('.champion-list .item-champion').not('.suggest');
-        console.log(contains);
+
         animate(contains, containsNot);
     }
 
@@ -120,9 +120,6 @@ $(function() {
             historique.push({'action':'DEFINIR_ROLE', 'role':role});
         }
         $('.champion-search-input').attr("placeholder", "Champions suggérés :");
-        heightSearchInput = $('.champion-search-input').height;
-        widthSearchInput = $('.champion-search-input').width;
-
 
         mettreAJour();
 
