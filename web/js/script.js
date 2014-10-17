@@ -1,109 +1,78 @@
 $(function() {
-
-    /*var selected;
-    var otherSelects = new Array();
-    var nbSelects;
-
-    function test() {
-
-        selected = $('#typeregle option:selected').val();
-
-        $('#typeregle option').each(function(index) {
-           if(selected != $(this).val()) {
-                otherSelects[index] = $(this);
-           }
-        });
-
-        nbSelects = otherSelects.length;
-
-        for(var i = 1; i < nbSelects; i ++) {
-            $('#tm_teambuilderbundle_regle_' + otherSelects[i].val()).remove();
-
-
-        }
-    }
-    test();*/
-    //console.log(otherSelects);
-
-
-    var equipe = '';
     var historique = [];
     var compteur = 0;
+    var globalTimer;
     var tourMonEquipe = 0;
     var tourEquipeAdverse = 0;
     var toursEquipeBleue = [ 0, 2, 4, 6, 9, 10, 13, 14 ];
-    $('#form div').eq(2).hide();
-
-    $('recherche-champion').submit(function (e) {
-        e.preventDefault();
-    });
-
-    function array_values(input) {
-        var tmp_arr = [],
-            key = '';
-
-        if (input && typeof input === 'object' && input.change_key_case) {
-            return input.values();
-        }
-
-        for (key in input) {
-            tmp_arr[tmp_arr.length] = input[key];
-        }
-
-        return tmp_arr;
-    }
+    var isDefineDefinirRole = false;
+    $('.champion-search-input').hide();
+//    $('.suggestion-button').hide();
 
     function inArray(needle, haystack) {
         return (-1 != $.inArray(needle, haystack))
     }
 
-
     function isMonTour(etape, monEquipe) {
-        if ('BLEU' == monEquipe) {
+
+        if ('BLUE' == monEquipe) {
             return inArray(etape, toursEquipeBleue);
         }
 
         return ! inArray(etape, toursEquipeBleue);
     }
 
-    function tourDeLEquipe(etape)
-    {
-        return (inArray(etape, toursEquipeBleue) ? 'BLEU' : 'VIOLETTE');
+    function tourDeLEquipe(etape) {
+        return (inArray(etape, toursEquipeBleue) ? 'BLUE' : 'VIOLET');
     }
 
-    $('.champion-selecteur .liste-champion li img').live('click', function(e) {
+    function showSuggestedChampions() {
 
-        e.preventDefault();
+        var contains = $('.champion-list .suggest');
+        var containsNot = $('.champion-list .item-champion').not('.suggest');
+        console.log(contains);
+        animate(contains, containsNot);
+    }
+
+    $(window).resize(function() {
+        clearTimeout(globalTimer);
+        globalTimer = setTimeout(showSuggestedChampions, 500);
+    });
+
+    $('.champion-list .item-champion ').live('click', function() {
+
+        $('.champion-search-input').attr("placeholder", "Chercher un champion...");
+
         var $this = $(this);
 
         if (compteur >= 16 || $this.hasClass('inselectionnable'))
             return false;
 
-        var idChampion     = $(this).data('champion-id');
-        var $champion      = $this;
-        var couleurEquipe         = $('#recherche-champion input[type="radio"]:checked').val();
-        var divDestination = '.' + tourDeLEquipe(compteur).toLowerCase();
-
-
+        var idChampion     = $this.data('id-champion');
+        var $champion      = $('img', this);
+        var couleurEquipe         = $(".form-search-champion input[type='radio']:checked").val();
+        var divDestination = '.' + tourDeLEquipe(compteur).toLowerCase() + '-team';
 
         if (compteur < 6) {
             historique.push({'action':'BANNIR', 'id_champion':idChampion});
-            $this.removeClass('selectionnable');
+
 
             if(isMonTour(compteur, couleurEquipe)) {
-                $(divDestination + ' ul.bannis #champion-id-' + tourMonEquipe).append($champion.clone());
+                $(divDestination + ' .thumbnail .banned-champion[data-id-champion=' + tourMonEquipe + ']').append($champion.clone());
                 tourMonEquipe ++;
             }
             else {
-                $(divDestination + ' ul.bannis #champion-id-' + tourEquipeAdverse).append($champion.clone());
+                $(divDestination + ' .thumbnail .banned-champion[data-id-champion=' + tourEquipeAdverse + ']').append($champion.clone());
                 tourEquipeAdverse ++;
-        }
+            }
+
             if(tourMonEquipe == 3 && tourEquipeAdverse == 3) {
                 tourMonEquipe = 0;
                 tourEquipeAdverse = 0;
+                if(couleurEquipe == 'BLUE') {
+                    $('.my-team .thumbnail .pick-champion[data-id-champion=0]').next().show();
+                }
             }
-
-
 
         }
         else {
@@ -113,93 +82,97 @@ $(function() {
             historique.push({'action':'CHOISIR', 'equipe':equipe, 'id_champion':idChampion});
             $this.removeClass('selectionnable');
             if(equipe == 'MOI') {
-                $(divDestination + ' ul.selectionne #champion-id-' + tourMonEquipe).prepend($champion.clone());
+                $(divDestination + ' .thumbnail .pick-champion[data-id-champion=' + tourMonEquipe + ']').append($champion.clone());
                 tourMonEquipe ++;
             }
             else {
-                $(divDestination + ' ul.selectionne #champion-id-' + tourEquipeAdverse).prepend($champion.clone());
+                $(divDestination + ' .thumbnail .pick-champion[data-id-champion=' + tourEquipeAdverse + ']').append($champion.clone());
                 tourEquipeAdverse ++;
             }
             if(isMonTour(compteur + 1, couleurEquipe)) {
-                $('.mon-equipe #champion-id-' + parseInt(tourMonEquipe - 1) + ' select').hide();
-                $('.mon-equipe #champion-id-' + parseInt(tourMonEquipe - 1) + ' button').hide();
-                $('.mon-equipe #champion-id-' + tourMonEquipe + ' select').show();
-                $('.mon-equipe #champion-id-' + tourMonEquipe + ' button').show();
+                $('.my-team .thumbnail .pick-champion[data-id-champion=' + parseInt(tourMonEquipe - 1) + ']').next().hide();
+                $('.my-team .thumbnail .pick-champion[data-id-champion=' + tourMonEquipe + ']').next().show();
             }
             else {
-                $('.mon-equipe #champion-id-' + parseInt(tourMonEquipe - 1) + ' select').hide();
-                $('.mon-equipe #champion-id-' + parseInt(tourMonEquipe - 1) + ' button').hide();
+                $('.my-team .thumbnail .pick-champion[data-id-champion=' + parseInt(tourMonEquipe - 1) + ']').next().hide();
             }
-
         }
 
+        $this.removeClass('selectionnable');
         $this.addClass('inselectionnable');
-
+        $('.champion-list .item-champion').addClass('suggest');
+        showSuggestedChampions();
         compteur ++;
-        if(compteur == 6 && isMonTour(compteur + 1, equipe) && couleurEquipe == 'BLEU') {
-            $('#champion-id-0 select').show();
-            $('#champion-id-0 button').show();
-        }
+
     });
 
-    $('.mon-equipe button').live('click', function() {
+    $(".my-team input[type='button']").live('click', function() {
         role = $(this).prev().val();
 
-        $.each(historique, function( key, value ) {
-
-            if(value['action'] == 'CREER_REGLE') {
-                delete historique[key];
+        for(key in historique) {
+            if(historique[key]['action'] == "DEFINIR_ROLE") {
+                historique[key]= {'action':'DEFINIR_ROLE', 'role':role};
+                isDefineDefinirRole= true;
+                break;
             }
-        });
+        }
+        if(! isDefineDefinirRole) {
+            historique.push({'action':'DEFINIR_ROLE', 'role':role});
+        }
+        $('.champion-search-input').attr("placeholder", "Champions suggérés :");
+        heightSearchInput = $('.champion-search-input').height;
+        widthSearchInput = $('.champion-search-input').width;
 
-        historique = array_values(historique);
 
-        historique.push({'action':'DEFINIR_ROLE', 'role':role});
-//        console.log(historique);
-//        console.log('zdzqdq');
-        console.log(historique);
         mettreAJour();
 
     });
 
-    $('#recherche-champion input[type="radio"]').change(function() {
+    $(".form-search-champion input[type='radio']").change(function() {
 
-        $('.champion-selecteur div').remove();
+        $('.champion-search-input').next().remove();
         historique = [];
         compteur = 0;
         tourMonEquipe = 0;
         tourEquipeAdverse = 0;
-        monEquipe = $('#recherche-champion input[type="radio"]:checked').val();
+
+        monEquipe = $(".form-search-champion input[type='radio']:checked").val();
 
         $.ajax ({
             type: 'POST',
             dataType: "json",
-            url: "http://teambuilder/app_dev.php/teambuilder/regle/appliquer",
+            url: "appliquer",
             data: {'equipe':monEquipe},
+            async: false,
             success: function(data){
-                $('.champion-selecteur').append(data.teambuilder);
-                $('#form div').eq(2).show();
-                $('.role-champion').hide();
-                $(' .selectionne button').hide();
-                $('#list-to-filter').liveFilter($('#form_recherche'),'li img[data-champion-nom]');
+                $('.form-search-champion').append(data.teambuilder);
+                $(".champion-search-input").show();
+                $('.champion-role').hide();
+                $('.champion-list').liveFilter($('.champion-search-input'),'.item-champion');
+                $('.champion-search-input').keyup();
             }
         })
     });
     function mettreAJour() {
+
         $.ajax ({
             type: 'POST',
             dataType: "json",
-            url: "http://teambuilder/app_dev.php/teambuilder/ajax/getsuggestionchampion",
+            url: "getsuggestionchampion",
             data: JSON.stringify(historique),
             success: function(data){
 
-                if(compteur > 6 && compteur < 16 ) {
-                    $('.liste-champion ul li').removeClass('suggest');
-                    nbSuggestions = data.suggestions.length;
-                    for (var i=0; i<nbSuggestions; i++) {
+                if(compteur >= 6 && compteur < 16 ) {
 
-                        $('.liste-champion ul li[data-champion-id=' + data.suggestions[i].id + ']').addClass('suggest');
+                    $('.champion-list .item-champion').removeClass('suggest');
+
+                    nbSuggestions = data.suggestions.length;
+
+                    for (var i = 0; i < nbSuggestions; i ++) {
+                        $('.champion-list .item-champion[data-id-champion=' + data.suggestions[i].id + ']').addClass('suggest')
                     }
+
+                    showSuggestedChampions();
                 }
             }
         })

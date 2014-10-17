@@ -7,11 +7,12 @@
  *
  */
 (function($){
+
     $.fn.liveFilter = function(inputEl, filterEl, options){
         var defaults = {
             filterChildSelector: null,
             filter: function(el, val){
-                return $(el).attr('data-champion-nom').toUpperCase().indexOf(val.toUpperCase()) >= 0;
+                return $(el).data("name-champion").toUpperCase().indexOf(val.toUpperCase()) >= 0;
             },
             before: function(){},
             after: function(){}
@@ -25,25 +26,22 @@
         $(inputEl).keyup(function(){
             var val = $(this).val();
             var contains = el.filter(function(){
-
-
                 return filter(this, val);
             });
 
             var containsNot = el.not(contains);
-            if (options.filterChildSelector){
-                contains = contains.parents(filterEl);
-                containsNot = containsNot.parents(filterEl).hide();
-            }
-            options.before.call(this, contains, containsNot);
-            contains.show();
 
-            containsNot.hide();
+            options.before.call(this, contains, containsNot);
             if (val === '') {
-                contains.show();
                 containsNot.show();
             }
+
+
+
+            animate(contains, containsNot, filterEl);
+
             options.after.call(this, contains, containsNot);
         });
     }
+
 })(jQuery);

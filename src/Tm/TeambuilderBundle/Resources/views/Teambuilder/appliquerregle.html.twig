@@ -1,20 +1,27 @@
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+    {% block title %}
+        Créateur d'équipe
+    {% endblock %}
 
+    {% block tmteambuilder_body %}
+        <h2>Créez votre équipe :</h2>
 
-        {% extends "TmTeambuilderBundle::layout.html.twig" %}
-            {% block title %}
-                Visualisation des champion suggérés
-            {% endblock %}
-
-            {% block tmteambuilder_body %}
-                <h2>Champions suggérés :</h2>
-
-                <form id="recherche-champion" method="post" {{ form_enctype(form) }}>
-                    {{ form_errors(form) }}
-                    {{ form_widget(form) }}
-                    {{ form_rest(form) }}
-                </form>
-                <div class="champion-selecteur"></div>
-            {% endblock %}
-
-
-
+        <div class="col-md-8">
+            <div class="row form-search-champion">
+                <div class="col-md-4">
+                    <div class="form-inline">
+                        <label for="team">Je suis :</label>
+                        <label><input name="team" class="form-control" type="radio" value="BLUE"> Bleu</label>
+                        <label><input name="team" class="form-control" type="radio" value="VIOLET"> Violet</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <input type="search search-input" class="form-control champion-search-input" placeholder="Chercher un champion...">
+                        {#<a class="button suggestion-button">Suggestions</a>#}
+                        {#<a title="cliquez pour supprimer la liste des champions suggérés">×</a>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}

@@ -25,6 +25,11 @@ use Tm\TeambuilderBundle\Regles\TeamBuilder;
 
 class TeambuilderController extends Controller
 {
+    public function indexAction() {
+        return $this->render('TmTeambuilderBundle:Teambuilder:index.html.twig');
+    }
+
+
     public function appliquerReglesAction()
     {
         $request = $this->get('request');
@@ -41,12 +46,13 @@ class TeambuilderController extends Controller
 
 
             $monEquipe = strtolower($request->request->get('equipe'));
-            if($monEquipe == 'bleu') {
-                $equipeAdverse = 'violette';
+            if($monEquipe == 'blue') {
+                $equipeAdverse = 'violet';
             }
             else {
-                $equipeAdverse = 'bleu';
+                $equipeAdverse = 'blue';
             }
+
 
             $listeChampionsSuggeres = $teamBuilder->getSuggestions();
 
@@ -64,19 +70,8 @@ class TeambuilderController extends Controller
             return (new Response(json_encode($html)));
         }
         else {
-            $form = $this->createFormBuilder()
-                ->add('equipe', 'choice', array(
-                    'choices' => array('BLEU' => 'Bleu', 'VIOLETTE' => 'Violet'),
-                    'multiple' => false,
-                    'expanded' => true,
-                ))
-                ->add('recherche' , 'text')
-                ->getForm();
 
-            return $this->render('TmTeambuilderBundle:Teambuilder:appliquerregle.html.twig', [
-                'form' => $form->createView(),
-                'monEquipe' => false,
-            ]);
+            return $this->render('TmTeambuilderBundle:Teambuilder:appliquerregle.html.twig');
         }
     }
 
@@ -98,15 +93,12 @@ class TeambuilderController extends Controller
             $teamBuilder = new TeamBuilder($listeRegles, $listeChampions);
 
             foreach($actions as $key => $action) {
+
                 if($action['action'] == TeamBuilder::ACTION_DEFINIR_ROLE) {
                     $role = $action['role'];
                     continue;
                 }
                 $champion = $championRepository->find($action['id_champion']);
-
-                if($champion === null) {
-                    return new Response(array('error' => 'true'));
-                }
 
                 $teamBuilder->appliquerAction($action, $champion);
             }
@@ -116,7 +108,6 @@ class TeambuilderController extends Controller
             /** @var Champion $championSuggere */
             foreach($listeChampionsSuggeres as $championSuggere) {
                 $data['suggestions'][] = [ 'id' => $championSuggere->getId() ];
-                $data['suggestions'][] = [ 'nom' => $championSuggere->getNom() ];
             }
 
             $response = new Response(json_encode($data));

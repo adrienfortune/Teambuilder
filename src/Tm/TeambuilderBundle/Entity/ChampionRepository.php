@@ -15,11 +15,11 @@ class ChampionRepository extends EntityRepository
     public function getChampionsAvecRelations()
     {
         $qb = $this->createQueryBuilder('c');
-        $qb ->join('c.caracteristiques', 'ca')
+        $qb //->join('c.caracteristiques', 'ca')
             ->join('c.roles', 'r')
             ->join('c.typeAttaques', 't')
             ->join('c.roles', 'co')
-            ->addSelect('ca')
+            //->addSelect('ca')
             ->addSelect('r')
             ->addSelect('t')
             ->addSelect('co');

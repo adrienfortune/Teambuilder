@@ -1,59 +1,37 @@
-.equipe {
-    height: 300px;
-    width: 200px;
-    float: left;
-}
-.bleu {
-    height: 300px;
-    width: 200px;
-    float: left;
-}
-.violette {
-    height: 300px;
-    width: 200px;
-    float: left;
+body {
+  padding-top: 50px;
 }
 
-.liste-champion {
-    width: 400px;
-    float: left;
+.form-search-champion {
+	margin-bottom: 1em;
 }
-.liste-to-filter li{
-    display: list-item;
+
+.champion-list .item-champion .thumbnail  {
+    background-color: #2ecc71;
+    color: white;
 }
-.liste-to-filter ul{
-    display: block;
+
+.blue-team {
+	background-color: #3498db;
 }
-.liste-to-filter>* {
-    float: left;
-}
-.champion-selecteur {
-    width: 100%;
+
+.violet-team {
+	background-color: #9b59b6;
 }
 .inselectionnable {
-    background-color:red;
+    cursor: not-allowed;
 }
 
 .selectionnable {
     cursor: pointer;
 }
-.champion-selecteur .equipe li {
-    background-color:green;
-    height: 125px;
-    line-height: 125px;
+
+.blue-team .thumbnail, .violet-team .thumbnail {
+    width: 100px;
+    height: 100px;
 }
-.champion-selecteur .bleu li {
-    background-color:green;
-    height: 125px;
-    line-height: 125px;
-}
-.champion-selecteur .violette li {
-    background-color:green;
-    height: 125px;
-    line-height: 125px;
+.champion-list .item-champion {
+    position: absolute;
 }
 
-.suggest {
-    background-color: #2ecc71;
-    color: white;
-}
+
