@@ -1,4 +1,4 @@
-$(function() {
+(function($) {
     var historique = [];
     var compteur = 0;
     var globalTimer;
@@ -174,5 +174,4 @@ $(function() {
             }
         })
     }
-});
-
+})(jQuery);
