@@ -7,7 +7,7 @@
     var toursEquipeBleue = [ 0, 2, 4, 6, 9, 10, 13, 14 ];
     var isDefineDefinirRole = false;
     $('.champion-search-input').hide();
-//    $('.suggestion-button').hide();
+
 
     function inArray(needle, haystack) {
         return (-1 != $.inArray(needle, haystack))
@@ -134,7 +134,6 @@
         tourEquipeAdverse = 0;
 
         monEquipe = $(".form-search-champion input[type='radio']:checked").val();
-
         $.ajax ({
             type: 'POST',
             dataType: "json",
@@ -142,6 +141,7 @@
             data: {'equipe':monEquipe},
             async: false,
             success: function(data){
+                $('.teambuilder').remove();
                 $('.form-search-champion').append(data.teambuilder);
                 $(".champion-search-input").show();
                 $('.champion-role').hide();

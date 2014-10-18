@@ -1,6 +1,5 @@
 (function($){
     animate = function(contains, containsNot) {
-        console.log("test2");
         contains.show();
         var width = $('.champion-list .item-champion').width();
         var height = $('.champion-list .item-champion').height();
