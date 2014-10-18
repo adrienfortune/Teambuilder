@@ -43,7 +43,7 @@
     <div class="col-md-8 champion-list">
         <div class="row">
             {% for champion in listeChampions %}
-                <div class="item-champion col-md-3 selectionnable suggest" data-id-champion="{{ champion.id }}" data-name-champion="{{ champion.nom }}" style="display: none; left: 0px; top: 0px;">
+                <div class="item-champion col-md-3 selectionnable suggest" data-id-champion="{{ champion.id }}" data-name-champion="{{ champion.nom }}" style="display: none; left: 0; top: 0;">
                     <div class="thumbnail">
                         <a class="pick-champion"><img
                                     src="{{ asset(champion.webPath) }}" title="{{ champion.nom }}"></a>
