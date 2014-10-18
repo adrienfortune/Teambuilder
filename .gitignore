@@ -4,6 +4,6 @@
 /app/logs/*
 /vendor/
 /app/config/parameters.yml
-/.idea/
+/.idea/*
 .idea/workspace.xml
 .idea/Code.iml
