@@ -6,9 +6,9 @@
     {% block tmteambuilder_body %}
         <h2>Créez votre équipe :</h2>
 
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="row form-search-champion">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <div class="form-inline">
                         <label for="team">Je suis :</label>
                         <label><input name="team" class="form-control" type="radio" value="BLUE"> Bleu</label>
@@ -16,8 +16,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
-                        <input type="search search-input" class="form-control champion-search-input" placeholder="Chercher un champion...">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="form-group">
+                            <input type="search search-input" class="form-control champion-search-input" placeholder="Chercher un champion...">
+                        </div>
                         {#<a class="button suggestion-button">Suggestions</a>#}
                         {#<a title="cliquez pour supprimer la liste des champions suggérés">×</a>#}
                     </div>
