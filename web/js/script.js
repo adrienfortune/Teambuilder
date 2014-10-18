@@ -146,7 +146,7 @@
                 $(".champion-search-input").show();
                 $('.champion-role').hide();
                 $('.champion-list').liveFilter($('.champion-search-input'),'.item-champion');
-                $('.champion-list .item-champion img').load(function() {
+                $('.champion-list .item-champion img').first().load(function() {
                     showSuggestedChampions();
                 });
             }
