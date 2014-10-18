@@ -16,7 +16,8 @@
                     <div class="thumbnail">
                         <a class="pick-champion" data-id-champion="{{ i }}"></a>
                         <div class="champion-role">
-                            <select>
+                            <label for="role">Rôle :</label>
+                            <select name="role">
                                 {% for role in listeRoles %}
                                     <option value="{{ role.code }}">{{ role.libelle }}</option>
                                 {% endfor %}
