@@ -17,6 +17,16 @@ class RegleType extends AbstractType
     {
         $builder
             ->add('nombre',                'integer')
+            ->add('typeRegle', 'choice', array(
+                'choices' => array(
+                    'caracteristique' => 'Caractéristique',
+                    'typeAttaque' => 'Type d\'attaque'
+                ),
+                'required'    => true,
+                'empty_value' => 'Choisissez une option',
+                'empty_data'  => null,
+                'mapped'     => false
+            ))
             ->add('caracteristique', 'entity', array(
                 'class' => 'TmTeambuilderBundle:Caracteristique',
                 'property' => 'libelle',
@@ -38,6 +48,7 @@ class RegleType extends AbstractType
                 'property' => 'libelle',
                 'multiple' => false,
                 'expanded' => false,
+                'required' => true,
             ));
     }
 

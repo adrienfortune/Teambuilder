@@ -27,21 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="changePassword_content.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
+      <file leaf-file-name="ajouterregle.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="124" selection-start="176" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-              <folding>
-                <element signature="e#106#130#0" expanded="true" />
-              </folding>
+            <state line="38" column="49" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1326">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajouterregle.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="-0.1437309" vertical-offset="379" max-vertical-offset="1360">
+            <state line="37" column="18" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
               <folding />
             </state>
           </provider>
@@ -50,7 +48,7 @@
       <file leaf-file-name="RegleType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1088">
+            <state line="28" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -68,16 +66,16 @@
       <file leaf-file-name="Regle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="4555" max-vertical-offset="6528">
+            <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6528">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="179" column="0" selection-start="6171" selection-end="6171" vertical-scroll-proportion="0.0" vertical-offset="2198" max-vertical-offset="3179">
+            <state line="178" column="0" selection-start="6170" selection-end="6170" vertical-scroll-proportion="0.6360856" vertical-offset="2402" max-vertical-offset="3417">
               <folding />
             </state>
           </provider>
@@ -103,7 +101,6 @@
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Entity/Utilisateur.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/EquipeRepository.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/listerregle.html.twig" />
-        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php" />
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Profil/modifierprofil.html.twig" />
         <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php" />
         <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Profile/edit.html.twig" />
@@ -119,7 +116,6 @@
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Form/label.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Form/Type/RegistrationFormType.php" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Resseting/reset_content.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Resseting/reset.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Resseting/request_contant.html.twig" />
@@ -142,8 +138,10 @@
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/formulaireajouterregle.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php" />
-        <option value="$PROJECT_DIR$/web/js/script.js" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/script.js" />
       </list>
     </option>
   </component>
@@ -250,6 +248,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1438,13 +1454,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="427" selection-end="427" vertical-scroll-proportion="0.20795107" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5198777" vertical-offset="510" max-vertical-offset="3791">
@@ -1782,25 +1791,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="622" selection-end="622" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1088">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/ChangePassword/changePassword_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="124" selection-start="176" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="e#106#130#0" expanded="true" />
-          </folding>
+        <state line="4" column="124" selection-start="176" selection-end="207" vertical-scroll-proportion="0.06931702" vertical-offset="0" max-vertical-offset="981">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="4555" max-vertical-offset="6528">
+        <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6528">
           <folding />
         </state>
       </provider>
@@ -1812,16 +1812,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="0" selection-start="6171" selection-end="6171" vertical-scroll-proportion="0.0" vertical-offset="2198" max-vertical-offset="3179">
+        <state line="37" column="18" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="-0.1437309" vertical-offset="379" max-vertical-offset="1360">
+        <state line="38" column="49" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="0" selection-start="6170" selection-end="6170" vertical-scroll-proportion="0.6360856" vertical-offset="2402" max-vertical-offset="3417">
           <folding />
         </state>
       </provider>

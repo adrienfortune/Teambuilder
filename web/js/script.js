@@ -177,5 +177,19 @@
         })
     }
 
+    if($('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle[option!=null]')) {
+        var valeurRegle = $('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle').val();
+        $(".tm_teambuilderbundle_regle_" + valeurRegle).show();
+    }
 
+    $('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle').change(function() {
+       var valeurRegle = $(this).val();
+        console.log(valeurRegle);
+        $('.typeRegle').hide();
+
+        if(null != valeurRegle){
+            $(".tm_teambuilderbundle_regle_" + valeurRegle).show();
+        }
+
+    });
 })(jQuery);
