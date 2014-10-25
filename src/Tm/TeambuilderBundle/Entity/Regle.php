@@ -34,18 +34,19 @@ class Regle
     /**
      * @var integer
      *
-     * @ORM\Column(name="NOMBRE", type="integer", nullable=false)
-     */
-    private $nombre;
-
-    /**
-     * @var integer
      * @Assert\Range(
      *      min = 0,
      *      max = 5,
      *      minMessage = "Pas de nombre négatif ",
      *      maxMessage = "Le nombre ne peut dépasser 5"
      * )
+     * @ORM\Column(name="NOMBRE", type="integer", nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var integer
+     *
      * @ORM\Column(name="PRIORITE", type="integer", nullable=false)
      */
     private $priorite = 1;
@@ -289,6 +290,22 @@ class Regle
             $context->addViolationAt(
                 'typeAttaque',
                 'Au moins un des champs: Caractéristique, ou Type d\'attaque doit être renseigné',
+                array(),
+                null
+            );
+        }
+        if( $this->getCaracteristique() != null && $this->getTypeAttaque()!= null)
+        {
+            $context->addViolationAt(
+                'caracteristique',
+                'Un seul des champs: Caractéristique, ou Type d\'attaque doit être renseigné',
+                array(),
+                null
+            );
+
+            $context->addViolationAt(
+                'typeAttaque',
+                'Un seul des champs: Caractéristique, ou Type d\'attaque doit être renseigné',
                 array(),
                 null
             );

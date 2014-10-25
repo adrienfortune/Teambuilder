@@ -30,7 +30,7 @@
       <file leaf-file-name="ajouterregle.html.twig" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="49" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1326">
+            <state line="44" column="34" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1326">
               <folding />
             </state>
           </provider>
@@ -48,7 +48,7 @@
       <file leaf-file-name="RegleType.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="209" max-vertical-offset="1275">
+            <state line="24" column="38" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,16 @@
       <file leaf-file-name="Regle.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6528">
+            <state line="312" column="5" selection-start="7073" selection-end="7073" vertical-scroll-proportion="0.0" vertical-offset="4438" max-vertical-offset="6817">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="22" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1564">
               <folding />
             </state>
           </provider>
@@ -75,7 +84,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="0" selection-start="6170" selection-end="6170" vertical-scroll-proportion="0.6360856" vertical-offset="2402" max-vertical-offset="3417">
+            <state line="188" column="8" selection-start="6656" selection-end="6656" vertical-scroll-proportion="0.77471966" vertical-offset="2436" max-vertical-offset="3417">
               <folding />
             </state>
           </provider>
@@ -137,10 +146,10 @@
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/appliquerregle.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/formulaireajouterregle.html.twig" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php" />
-        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php" />
         <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig" />
+        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php" />
+        <option value="$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php" />
         <option value="$PROJECT_DIR$/web/js/script.js" />
       </list>
     </option>
@@ -1676,13 +1685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="22" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.3625" vertical-offset="604" max-vertical-offset="1564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
@@ -1798,16 +1800,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="20" selection-start="1169" selection-end="1169" vertical-scroll-proportion="0.0" vertical-offset="373" max-vertical-offset="6528">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="644" column="42" selection-start="20003" selection-end="20003" vertical-scroll-proportion="0.0" vertical-offset="9992" max-vertical-offset="12019">
+        <state line="56" column="22" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
@@ -1819,23 +1814,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="1275">
+        <state line="44" column="34" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="1326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="49" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1326">
+        <state line="644" column="42" selection-start="20003" selection-end="20003" vertical-scroll-proportion="0.0" vertical-offset="9992" max-vertical-offset="12019">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0" vertical-offset="158" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="312" column="5" selection-start="7073" selection-end="7073" vertical-scroll-proportion="0.0" vertical-offset="4438" max-vertical-offset="6817">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="6170" selection-end="6170" vertical-scroll-proportion="0.6360856" vertical-offset="2402" max-vertical-offset="3417">
+        <state line="188" column="8" selection-start="6656" selection-end="6656" vertical-scroll-proportion="0.77471966" vertical-offset="2436" max-vertical-offset="3417">
           <folding />
         </state>
       </provider>

@@ -186,7 +186,7 @@
        var valeurRegle = $(this).val();
         console.log(valeurRegle);
         $('.typeRegle').hide();
-
+        $(".typeRegle option[value='']").attr('selected', true);
         if(null != valeurRegle){
             $(".tm_teambuilderbundle_regle_" + valeurRegle).show();
         }
