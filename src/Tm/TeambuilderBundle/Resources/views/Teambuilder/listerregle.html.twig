@@ -8,19 +8,20 @@
 {% block tmteambuilder_body %}
 
     <h2>Liste des règles :</h2>
+    <p><a href="{{ path('tm_teambuilder_regle_ajouter') }}">Ajouter une nouvelle règle</a></p>
     <ul>
         {% for regle in listeRegles %}
             <li>
                 <div>
                     {{ regle.operation.libelle }}
                     {{ regle.nombre }}
+                    Champion avec
                     {% if regle.typeAttaque is not null %}
+                        le type d'attaque :
                         {{ regle.typeAttaque.libelle }}
                     {% endif %}
-                    {% if regle.role is not null %}
-                        {{ regle.role.libelle }}
-                    {% endif %}
                     {% if regle.caracteristique is not null %}
+                        la caractéristique :
                         {{ regle.caracteristique.libelle }}
                     {% endif %}
 

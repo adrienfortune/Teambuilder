@@ -4,7 +4,7 @@ imports:
 
 framework:
     #esi:             ~
-    #translator:      { fallback: "%locale%" }
+    translator:      { fallback: "%locale%" }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -28,6 +28,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - 'TmUserBundle:Form:errors.html.twig'
 
 # Assetic Configuration
 assetic:
@@ -67,3 +70,18 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+fos_user:
+    db_driver:     orm                       # Le type de BDD à utiliser, nous utilisons l'ORM Doctrine depuis le début
+    firewall_name: main                      # Le nom du firewall derrière lequel on utilisera ces utilisateurs
+    user_class:    Tm\UserBundle\Entity\Utilisateur # La classe de l'entité User que nous utilisons
+    resetting:
+        email:
+            from_email:
+                address:        noreply@teambuilder.fr
+                sender_name:    Teambuilder Resetting
+    registration:
+            form:
+                type: tmuserbundle_user_registration
+
+gregwar_captcha: ~

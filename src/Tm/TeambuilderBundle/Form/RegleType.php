@@ -15,25 +15,11 @@ class RegleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-
-        $test = array('testa' => 'testa',
-                      'testb' => 'testb'
-        );
-
         $builder
             ->add('nombre',                'integer')
-            ->add('priorite',              'integer')
             ->add('caracteristique', 'entity', array(
                 'class' => 'TmTeambuilderBundle:Caracteristique',
-                'property' => 'code',
-                'multiple' => false,
-                'expanded' => false,
-                'required' => false,
-                'empty_value' => 'Choisissez une option',
-            ))
-            ->add('role', 'entity', array(
-                'class' => 'TmTeambuilderBundle:Role',
-                'property' => 'code',
+                'property' => 'libelle',
                 'multiple' => false,
                 'expanded' => false,
                 'required' => false,
@@ -41,7 +27,7 @@ class RegleType extends AbstractType
             ))
             ->add('typeAttaque', 'entity', array(
                 'class' => 'TmTeambuilderBundle:TypeAttaque',
-                'property' => 'code',
+                'property' => 'libelle',
                 'multiple' => false,
                 'expanded' => false,
                 'required' => false,
@@ -49,16 +35,10 @@ class RegleType extends AbstractType
             ))
             ->add('operation', 'entity', array(
                 'class' => 'TmTeambuilderBundle:Operation',
-                'property' => 'code',
-                'multiple' => false,
-                'expanded' => false,
-            ))
-            ->add('equipe', 'entity', array(
-                'class' => 'TmTeambuilderBundle:Equipe',
                 'property' => 'libelle',
                 'multiple' => false,
                 'expanded' => false,
-        ));
+            ));
     }
 
     /**

@@ -21,14 +21,11 @@ use Tm\TeambuilderBundle\Form\RegleType;
 use Tm\TeambuilderBundle\Regles\Regles;
 use Symfony\Component\HttpFoundation\Response;
 use Tm\TeambuilderBundle\Regles\TeamBuilder;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 
 class TeambuilderController extends Controller
 {
-    public function indexAction() {
-        return $this->render('TmTeambuilderBundle:Teambuilder:index.html.twig');
-    }
-
 
     public function appliquerReglesAction()
     {
@@ -87,7 +84,14 @@ class TeambuilderController extends Controller
             $em = $this->getDoctrine()->getManager();
             $championRepository = $em->getRepository('TmTeambuilderBundle:Champion');
             $regleRepository = $em->getRepository('TmTeambuilderBundle:Regle');
-            $listeRegles = $regleRepository->findAll();
+
+            if( $this->container->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED') ){
+                $listeRegles = $regleRepository->getReglesUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId());
+            }
+            else {
+                $listeRegles = $regleRepository->findAll();
+            }
+
             $listeChampions =  $championRepository->findAll();
 
             $teamBuilder = new TeamBuilder($listeRegles, $listeChampions);
@@ -117,6 +121,9 @@ class TeambuilderController extends Controller
         return new Response();
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function listerchampionAction()
     {
        $em = $this->getDoctrine()
@@ -128,6 +135,9 @@ class TeambuilderController extends Controller
         return $this->render('TmTeambuilderBundle:Teambuilder:listerchampion.html.twig', array('listeChampions' => $listeChampions ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function ajouterchampionAction()
     {
         $champion = new Champion();
@@ -152,6 +162,9 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function supprimerchampionAction(Champion $champion)
     {
         $em = $this->getDoctrine()
@@ -170,6 +183,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function modifierchampionAction(Champion $champion)
     {
 
@@ -204,6 +220,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function ajouterroleAction()
     {
         $role = new Role();
@@ -229,6 +248,9 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function listerroleAction()
     {
         $em = $this->getDoctrine()
@@ -241,6 +263,9 @@ class TeambuilderController extends Controller
         return $this->render('TmTeambuilderBundle:Teambuilder:listerrole.html.twig', array('listeRoles' => $listeRoles ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function supprimerroleAction(Role $role)
     {
         $em = $this->getDoctrine()
@@ -259,6 +284,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function modifierroleAction(Role $role)
     {
 
@@ -290,6 +318,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function ajoutercaracteristiqueAction()
     {
         $caracteristique = new Caracteristique();
@@ -315,6 +346,9 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function listercaracteristiqueAction()
     {
         $em = $this->getDoctrine()
@@ -327,6 +361,9 @@ class TeambuilderController extends Controller
         return $this->render('TmTeambuilderBundle:Teambuilder:listercaracteristique.html.twig', array('listeCaracteristiques' => $listeCaracteristiques ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function supprimercaracteristiqueAction(Caracteristique $caracteristique)
     {
         $em = $this->getDoctrine()
@@ -345,6 +382,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function modifiercaracteristiqueAction(Caracteristique $caracteristique)
     {
 
@@ -377,6 +417,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function ajoutertypeattaqueAction()
     {
         $typeAttaque = new TypeAttaque();
@@ -401,6 +444,9 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function listertypeattaqueAction()
     {
         $em = $this->getDoctrine()
@@ -413,6 +459,9 @@ class TeambuilderController extends Controller
         return $this->render('TmTeambuilderBundle:Teambuilder:listertypeattaque.html.twig', array('listeTypeAttaques' => $listeTypeAttaques ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function supprimertypeattaqueAction(TypeAttaque $typeAttaque)
     {
         $em = $this->getDoctrine()
@@ -431,6 +480,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function modifiertypeattaqueAction(TypeAttaque $typeAttaque)
     {
 
@@ -463,6 +515,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function ajouteroperationAction()
     {
         $operation = new Operation();
@@ -488,6 +543,9 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function listeroperationAction()
     {
         $em = $this->getDoctrine()
@@ -500,6 +558,9 @@ class TeambuilderController extends Controller
         return $this->render('TmTeambuilderBundle:Teambuilder:listeroperation.html.twig', array('listeOperations' => $listeOperations ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function supprimeroperationAction(Operation $operation)
     {
         $em = $this->getDoctrine()
@@ -518,6 +579,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_ADMIN')")
+     */
     public function modifieroperationAction(Operation $operation)
     {
 
@@ -550,6 +614,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_UTILISATEUR')")
+     */
     public function ajouterregleAction()
     {
         $regle = new Regle();
@@ -563,6 +630,9 @@ class TeambuilderController extends Controller
 
             if($form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
+                $equipeRepository = $em->getRepository('TmTeambuilderBundle:Equipe');
+
+                $regle->setEquipe($equipeRepository->getEquipeUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId()));
                 $em->persist($regle);
                 $em->flush();
 
@@ -576,17 +646,23 @@ class TeambuilderController extends Controller
         ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_UTILISATEUR')")
+     */
     public function listerregleAction()
     {
         $em = $this->getDoctrine()
-            ->getManager()
-            ->getRepository('TmTeambuilderBundle:Regle');
+            ->getManager();
+        $regleRepository = $em->getRepository('TmTeambuilderBundle:Regle');
 
-        $listeRegles =  $em->findAll();
+        $listeRegles =  $regleRepository->getReglesUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId());
 
         return $this->render('TmTeambuilderBundle:Teambuilder:listerregle.html.twig', array('listeRegles' => $listeRegles ));
     }
 
+    /**
+     *  @Security("has_role('ROLE_UTILISATEUR')")
+     */
     public function supprimerregleAction(Regle $regle)
     {
         $em = $this->getDoctrine()
@@ -605,6 +681,9 @@ class TeambuilderController extends Controller
 
     }
 
+    /**
+     *  @Security("has_role('ROLE_UTILISATEUR')")
+     */
     public function modifierregleAction(Regle $regle)
     {
 

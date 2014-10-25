@@ -1,0 +1,50 @@
+{% extends "FOSUserBundle::layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    <h1>Connexion</h1>
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <form action="{{ path("fos_user_security_check") }}" method="post">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}"/>
+
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <label for="username">{{ 'security.login.username'|trans }}</label>
+                    <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" placeholder="Nom d'utilisateur"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <label for="password">{{ 'security.login.password'|trans }}</label>
+                    <input type="password" class="form-control" id="password" name="_password" required="required" placeholder="Mot de passe"/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <div class="checkbox">
+                        <input type="checkbox" id="remember_me" name="_remember_me" value="on"/>
+                        <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                <input type="submit" class="btn btn-primary" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}"/>
+                    </div>
+            </div>
+        </div>
+    </form>
+
+    <a href="{{ path('fos_user_resetting_request') }}">Mot de passe perdu ?</a>
+{% endblock fos_user_content %}

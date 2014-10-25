@@ -1,0 +1,6 @@
+services:
+    tmuserbundle.registration.form.type:
+        class: Tm\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: tmuserbundle_user_registration }

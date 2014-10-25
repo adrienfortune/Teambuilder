@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class RegleRepository extends EntityRepository
 {
+    public function getReglesUtilisateurActuel($idUtilisateur)
+    {
+        $qb = $this->createQueryBuilder('r')
+            ->where('u.id = :id ')
+            ->setParameter('id', $idUtilisateur)
+            ->join('r.equipe', 'e')
+            ->join('e.utilisateur', 'u')
+            ->addSelect('r');
+
+        return $qb->getQuery()->getResult();
+    }
 }

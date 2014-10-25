@@ -43,7 +43,7 @@ class Regle
      *
      * @ORM\Column(name="PRIORITE", type="integer", nullable=false)
      */
-    private $priorite;
+    private $priorite = 1;
 
     /**
      * @var \Operation

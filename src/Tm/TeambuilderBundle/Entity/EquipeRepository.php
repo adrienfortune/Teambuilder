@@ -12,4 +12,15 @@ use Doctrine\ORM\EntityRepository;
  */
 class EquipeRepository extends EntityRepository
 {
+    public function getEquipeUtilisateurActuel($idUtilisateur)
+    {
+        $qb = $this->createQueryBuilder('e')
+            ->where('u.id = :id ')
+            ->setParameter('id', $idUtilisateur)
+            ->join('e.utilisateur', 'u')
+            ->addSelect('e');
+
+        return $qb->getQuery()->getSingleResult();
+    }
+
 }

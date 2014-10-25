@@ -1,0 +1,61 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<h1>Création d'un compte</h1>
+
+<form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST">
+
+    {{ form_errors(form) }}
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.username) }}
+                {{ form_widget(form.username ,{ 'attr': {'class': 'form-control', 'placeholder' : 'Nom d\'utilisateur'} }) }}
+                {{ form_errors(form.username) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.email) }}
+                {{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder' : 'Email'} }) }}
+                {{ form_errors(form.email) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.plainPassword.first) }}
+                {{ form_widget(form.plainPassword.first, { 'attr': {'class': 'form-control', 'placeholder' : 'Mot de passe'} }) }}
+                {{ form_errors(form.plainPassword.first) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.plainPassword.second) }}
+                {{ form_widget(form.plainPassword.second, { 'attr': {'class': 'form-control', 'placeholder' : 'Confirmation du mot de passe' } }) }}
+                {{ form_errors(form.plainPassword.second) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.captcha) }}
+                {{ form_widget(form.captcha, { 'attr': {'class': 'form-control', 'placeholder' : 'Captcha'} }) }}
+                {{ form_errors(form.captcha) }}
+            </div>
+        </div>
+    </div>
+    {{ form_rest(form) }}
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                <input type="submit" class="btn btn-primary" value="{{ 'registration.submit'|trans }}"/>
+            </div>
+        </div>
+    </div>
+</form>

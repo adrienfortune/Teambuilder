@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Equipe
  *
- * @ORM\Table(name="equipe", indexes={@ORM\Index(name="fk_EQUIPE_UTILISATEUR1_idx", columns={"ID_UTILISATEUR"})})
+ * @ORM\Table(name="equipe")
  * @ORM\Entity(repositoryClass="Tm\TeambuilderBundle\Entity\EquipeRepository")
  */
 class Equipe
@@ -43,16 +43,11 @@ class Equipe
     private $dateCreation;
 
     /**
-     * @var \Utilisateur
-     *
-     * @ORM\ManyToOne(targetEntity="Utilisateur")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="ID_UTILISATEUR", referencedColumnName="ID")
-     * })
+     * @var \Tm\UserBundle\Entity\Utilisateur
+     * @ORM\OneToOne(targetEntity="Tm\UserBundle\Entity\Utilisateur", inversedBy="equipe")
+     * @ORM\JoinColumn(name="ID_UTILISATEUR", referencedColumnName="id")
      */
-    private $idUtilisateur;
-
-
+    private $utilisateur;
 
     /**
      * Get id
@@ -134,25 +129,26 @@ class Equipe
     }
 
     /**
-     * Set idUtilisateur
+     * Set utilisateur
      *
-     * @param \Tm\TeambuilderBundle\Entity\Utilisateur $idUtilisateur
-     * @return Equipe
+     * @param \Tm\UserBundle\Entity\Utilisateur $utilisateur
+     * @return \Tm\UserBundle\Entity\Utilisateur Utilisateur
      */
-    public function setIdUtilisateur(\Tm\TeambuilderBundle\Entity\Utilisateur $idUtilisateur = null)
+    public function setUtilisateur(\Tm\UserBundle\Entity\Utilisateur $utilisateur)
     {
-        $this->idUtilisateur = $idUtilisateur;
+        $this->utilisateur = $utilisateur;
 
         return $this;
     }
 
     /**
-     * Get idUtilisateur
+     * Get utilisateur
      *
-     * @return \Tm\TeambuilderBundle\Entity\Utilisateur 
+     * @return \Tm\UserBundle\Entity\Utilisateur $utilisateur
      */
-    public function getIdUtilisateur()
+    public function getUtilisateur()
     {
-        return $this->idUtilisateur;
+        return $this->utilisateur;
     }
+
 }
