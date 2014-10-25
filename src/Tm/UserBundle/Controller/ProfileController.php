@@ -76,7 +76,7 @@ class ProfileController extends BaseController
             return $response;
         }
 
-        return $this->render('TmUserBundle:Profile:edit.html.twig', array(
+        return $this->render('FOSUserBundle:Profile:edit.html.twig', array(
             'form' => $form->createView()
         ));
     }

@@ -27,7 +27,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 class TeambuilderController extends Controller
 {
 
-    public function appliquerReglesAction()
+    public function indexAction()
     {
         $request = $this->get('request');
         if($request->isXmlHttpRequest()) {
@@ -68,7 +68,7 @@ class TeambuilderController extends Controller
         }
         else {
 
-            return $this->render('TmTeambuilderBundle:Teambuilder:appliquerregle.html.twig');
+            return $this->render('TmTeambuilderBundle:Teambuilder:index.html.twig');
         }
     }
 
@@ -89,7 +89,7 @@ class TeambuilderController extends Controller
                 $listeRegles = $regleRepository->getReglesUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId());
             }
             else {
-                $listeRegles = $regleRepository->findAll();
+                $listeRegles = $regleRepository->getReglesPubliques();
             }
 
             $listeChampions =  $championRepository->findAll();

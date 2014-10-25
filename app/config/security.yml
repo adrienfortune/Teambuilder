@@ -23,7 +23,7 @@ security:
                 check_path: fos_user_security_check
             logout:
                 path:   fos_user_security_logout
-                target: tm_teambuilder_regle_appliquer
+                target: /
             remember_me:
                 key:        %secret%
 

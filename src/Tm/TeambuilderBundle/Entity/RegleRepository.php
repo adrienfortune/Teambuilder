@@ -23,4 +23,14 @@ class RegleRepository extends EntityRepository
 
         return $qb->getQuery()->getResult();
     }
+
+    public function getReglesPubliques()
+    {
+        $qb = $this->createQueryBuilder('r')
+            ->where('e.IS_PUBLIC = 1')
+            ->join('r.equipe', 'e')
+            ->addSelect('r');
+
+        return $qb->getQuery()->getResult();
+    }
 }

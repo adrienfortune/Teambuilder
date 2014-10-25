@@ -4,7 +4,7 @@ tm_user:
 
 tm_teambuilder:
     resource: "@TmTeambuilderBundle/Resources/config/routing.yml"
-    prefix:   /teambuilder
+    prefix:   /
 
 fos_user_security:
     resource: "@FOSUserBundle/Resources/config/routing/security.xml"

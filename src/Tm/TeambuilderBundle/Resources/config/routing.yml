@@ -98,10 +98,6 @@ tm_teambuilder_regle_supprimer:
     path:  /regle/supprimer/{id}
     defaults: { _controller: TmTeambuilderBundle:Teambuilder:supprimerregle }
 
-tm_teambuilder_regle_appliquer:
-    path:  /regle/appliquer
-    defaults: { _controller: TmTeambuilderBundle:Teambuilder:appliquerregles }
-
 tm_teambuilder_ajax_recherchechampion:
     path:  /regle/getsuggestionchampion
     defaults: { _controller: TmTeambuilderBundle:Teambuilder:getsuggestionchampionajax }

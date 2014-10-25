@@ -7,8 +7,69 @@
 
 {% block tmteambuilder_body %}
 
-    <h2>Ajouter une régle :</h2>
+<h1>Ajouter une régle :</h1>
 
-    {% include "TmTeambuilderBundle:Teambuilder:formulaireajouterregle.html.twig" %}
+<form method="post" {{ form_enctype(form) }} class="tm_teambuilder_regle_ajouter">
+
+    {{ form_errors(form) }}
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.operation) }}
+                {{ form_widget(form.operation ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_errors(form.operation) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.nombre) }}
+                {{ form_widget(form.nombre ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_errors(form.nombre) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                <label class="required" for="typeregle">Type de règle </label>
+                <select id="typeregle" class="form-control" name="typeregle">
+                    <option value="caracteristique">Caractéristique</option>
+                    <option value="typeAttaque">Type d'attaque</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.caracteristique) }}
+                {{ form_widget(form.caracteristique ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_errors(form.caracteristique) }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                {{ form_label(form.typeAttaque) }}
+                {{ form_widget(form.typeAttaque ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_errors(form.typeAttaque) }}
+            </div>
+        </div>
+    </div>
+
+    {{ form_rest(form) }}
+
+    <div class="row">
+        <div class="form-group">
+            <div class="col-xs-4">
+                <input type="submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
 
 {% endblock %}

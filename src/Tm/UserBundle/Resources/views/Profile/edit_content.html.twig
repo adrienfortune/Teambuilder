@@ -2,7 +2,9 @@
 <h1>Modification des informations du profil</h1>
 
 <form action="{{ path('fos_user_profile_edit') }}" {{ form_enctype(form) }} method="POST" class="fos_user_profile_edit">
+
     {{ form_errors(form) }}
+
     <div class="row">
         <div class="form-group">
             <div class="col-xs-4">
@@ -21,6 +23,9 @@
             </div>
         </div>
     </div>
+
+    {{ form_rest(form) }}
+
     <div class="row">
         <div class="form-group">
             <div class="col-xs-4">
