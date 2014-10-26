@@ -46,3 +46,8 @@ body {
 .fos_user_security_login .checkbox input[type="checkbox"] {
     margin-left: 0px;
 }
+
+.message{
+    margin-top: 20px;
+    text-align: center;
+}

@@ -75,7 +75,7 @@ class TeambuilderController extends Controller
     public function getsuggestionchampionajaxAction()
     {
         $request = $this->get('request');
-        $data = ['suggestions' => []];
+
 
         if($request->isXmlHttpRequest()) {
             $actions = $request->getContent();
@@ -87,33 +87,46 @@ class TeambuilderController extends Controller
 
             if( $this->container->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED') ){
                 $listeRegles = $regleRepository->getReglesUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId());
-                var_dump($listeRegles);
             }
             else {
                 $listeRegles = $regleRepository->getReglesPubliques();
-                var_dump($listeRegles);
             }
 
             $listeChampions =  $championRepository->findAll();
 
             $teamBuilder = new TeamBuilder($listeRegles, $listeChampions);
 
+            $roleDefini = false;
+
             foreach($actions as $key => $action) {
 
                 if($action['action'] == TeamBuilder::ACTION_DEFINIR_ROLE) {
                     $role = $action['role'];
+                    $roleDefini = true;
                     continue;
                 }
+
                 $champion = $championRepository->find($action['id_champion']);
 
                 $teamBuilder->appliquerAction($action, $champion);
             }
 
-            $listeChampionsSuggeres = $teamBuilder->getSuggestions($role);
+            if($roleDefini == false) {
+                $isEquipeOptimale = $teamBuilder->isEquipeOptimale();
+            }
+            else {
+                $listeChampionsSuggeres = $teamBuilder->getSuggestions($role);
+            }
 
-            /** @var Champion $championSuggere */
-            foreach($listeChampionsSuggeres as $championSuggere) {
-                $data['suggestions'][] = [ 'id' => $championSuggere->getId() ];
+            if($roleDefini == false) {
+                $data = ['isEquipeOptimale' => []];
+                $data['isEquipeOptimale'] = $isEquipeOptimale;
+            } else {
+                $data = ['suggestions' => []];
+                /** @var Champion $championSuggere */
+                foreach($listeChampionsSuggeres as $championSuggere) {
+                    $data['suggestions'][] = [ 'id' => $championSuggere->getId() ];
+                }
             }
 
             $response = new Response(json_encode($data));

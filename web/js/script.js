@@ -7,7 +7,7 @@
     var toursEquipeBleue = [ 0, 2, 4, 6, 9, 10, 13, 14 ];
     var isDefineDefinirRole = false;
     $('.champion-search-input').hide();
-
+    var message = "";
 
     function inArray(needle, haystack) {
         return (-1 != $.inArray(needle, haystack))
@@ -39,7 +39,7 @@
         globalTimer = setTimeout(showSuggestedChampions, 500);
     });
 
-    $('.champion-list .item-champion ').live('click', function() {
+    $('.champion-list .item-champion').live('click', function() {
 
         $('.champion-search-input').attr("placeholder", "Chercher un champion...");
 
@@ -47,6 +47,8 @@
 
         if (compteur >= 16 || $this.hasClass('inselectionnable'))
             return false;
+
+
 
         var idChampion     = $this.data('id-champion');
         var $champion      = $('img', this);
@@ -71,8 +73,18 @@
                 tourEquipeAdverse = 0;
                 if(couleurEquipe == 'BLUE') {
                     $('.my-team .thumbnail .pick-champion[data-id-champion=0]').next().show();
+                    message = "Sélectionnez un champion choisi par votre équipe";
                 }
+                else {
+                    message = "Sélectionnez un champion choisi par l'équipe adverse";
+                }
+            } else  if(isMonTour(compteur + 1, couleurEquipe )) {
+                message = "Sélectionnez un champion banni par votre équipe";
             }
+            else {
+                message = "Sélectionnez un champion banni par l'équipe adverse";
+            }
+
 
         }
         else {
@@ -92,17 +104,30 @@
             if(isMonTour(compteur + 1, couleurEquipe)) {
                 $('.my-team .thumbnail .pick-champion[data-id-champion=' + parseInt(tourMonEquipe - 1) + ']').next().hide();
                 $('.my-team .thumbnail .pick-champion[data-id-champion=' + tourMonEquipe + ']').next().show();
+                message = "Sélectionnez un champion choisi par votre équipe";
             }
             else {
                 $('.my-team .thumbnail .pick-champion[data-id-champion=' + parseInt(tourMonEquipe - 1) + ']').next().hide();
+                message = "Sélectionnez un champion choisi par l'équipe adverse";
             }
         }
 
         $this.removeClass('selectionnable');
         $this.addClass('inselectionnable');
+
+
+
         $('.champion-list .item-champion').addClass('suggest');
         showSuggestedChampions();
         compteur ++;
+
+        $('.message').text('');
+        $('.message').append(message);
+
+        if( $('.champion-list .inselectionnable').length == 16) {
+            mettreAJour(false);
+        }
+
 
     });
 
@@ -121,7 +146,7 @@
         }
         $('.champion-search-input').attr("placeholder", "Champions suggérés :");
 
-        mettreAJour();
+        mettreAJour(true);
 
     });
 
@@ -134,25 +159,34 @@
         tourEquipeAdverse = 0;
 
         monEquipe = $(".form-search-champion input[type='radio']:checked").val();
+        var message = ""
         $.ajax ({
             type: 'POST',
             dataType: "json",
             url: "",
             data: {'equipe':monEquipe},
-            async: false,
             success: function(data){
-                $('.teambuilder').remove();
-                $('.form-search-champion').append(data.teambuilder);
-                $(".champion-search-input").show();
-                $('.champion-role').hide();
-                $('.champion-list').liveFilter($('.champion-search-input'),'.item-champion');
-                $('.champion-list .item-champion img').first().load(function() {
+                    $('.teambuilder').text('');
+                    $('.form-search-champion').append(data.teambuilder);
+                    $(".champion-search-input").show();
+                    $('.champion-role').hide();
+                    $('.champion-list').liveFilter($('.champion-search-input'),'.item-champion');
+                    $('.champion-list .item-champion img').first().load(function() {
                     showSuggestedChampions();
                 });
+                if(monEquipe == 'BLUE') {
+                    message = "Sélectionnez un champion banni par votre équipe";
+                }
+                else {
+                    message = "Sélectionnez un champion banni par l'équipe adverse";
+                }
+
+                $('.message').text('');
+                $('.message').append(message);
             }
         })
     });
-    function mettreAJour() {
+    function mettreAJour(getSuggestion) {
 
         $.ajax ({
             type: 'POST',
@@ -160,32 +194,44 @@
             url: "getsuggestionchampion",
             data: JSON.stringify(historique),
             success: function(data){
-
-                if(compteur >= 6 && compteur < 16 ) {
-
+                console.log('test');
+                if( getSuggestion == true) {
                     $('.champion-list .item-champion').removeClass('suggest');
 
                     nbSuggestions = data.suggestions.length;
-
                     for (var i = 0; i < nbSuggestions; i ++) {
                         $('.champion-list .item-champion[data-id-champion=' + data.suggestions[i].id + ']').addClass('suggest')
                     }
+                      showSuggestedChampions();
+                }
+                else {
 
-                    showSuggestedChampions();
+                    if(data.isEquipeOptimale) {
+                        console.log('test2');
+                        $('.message').text('');
+                        $('.message').append('Votre équipe est optimale selon vos règles');
+                    }
+                    else {
+                        console.log('test3');
+                        $('.message').text('');
+                        $('.message').append('Votre équipe n\'est optimale selon vos règles');
+                        $('.message').removeClass('alert-succes');
+                        $('.message').addClass('alert-error');
+                    }
                 }
             }
         })
     }
 
+
     if($("#tm_teambuilderbundle_regle_typeRegle option:selected").val() != "") {
         var valeurRegle = $('#tm_teambuilderbundle_regle_typeRegle option:selected').val();
         $("." + valeurRegle).show();
-        console.log($("#tm_teambuilderbundle_regle_typeRegle option:selected").val());
     }
     else if($(".tm_teambuilder_regle_modifier .type-regle select[value!='']").val() != "") {
         $(".tm_teambuilder_regle_modifier .type-regle select[value!='']").show();
+
         var idTypeRegle = $(".tm_teambuilder_regle_modifier .type-regle select[value!='']").attr('id');
-        console.log("zqddz");
 
         $('.' + idTypeRegle).show();
         $("#tm_teambuilderbundle_regle_typeRegle option[value='"+ idTypeRegle +"']").attr('selected', true);

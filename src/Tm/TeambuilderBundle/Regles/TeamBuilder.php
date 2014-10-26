@@ -87,7 +87,6 @@ class TeamBuilder
         foreach ($this->getMesChampions() as $champion) {
             /** @var Regle $regle */
             foreach ($this->listeRegles as $regle) {
-                //$isOptimale = ($isOptimale || $regle->test($champion));
                 $regle->test($champion, true);
             }
         }
