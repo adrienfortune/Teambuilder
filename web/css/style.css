@@ -20,8 +20,13 @@ body {
 }
 .inselectionnable {
     cursor: not-allowed;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.50;
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    background-color: grey;
 }
-
 .selectionnable {
     cursor: pointer;
 }
@@ -34,6 +39,10 @@ body {
     position: absolute;
 }
 
-.typeRegle {
+.type-regle {
     display: none;
+}
+
+.fos_user_security_login .checkbox input[type="checkbox"] {
+    margin-left: 0px;
 }

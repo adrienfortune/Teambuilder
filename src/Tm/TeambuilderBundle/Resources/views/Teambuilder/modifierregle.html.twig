@@ -2,12 +2,70 @@
 {% extends "TmTeambuilderBundle::layout.html.twig" %}
 
 {% block title %}
-    Modification des regles personnalisées
+    Modification des règles personnalisées
 {% endblock %}
 
 {% block tmteambuilder_body %}
 
-    <h2>Modifier une règle :</h2>
-    {% include "TmTeambuilderBundle:Teambuilder:formulaire.html.twig" %}
+    <h1>Modifier une régle :</h1>
 
+    <form method="post" {{ form_enctype(form) }} class="tm_teambuilder_regle_modifier">
+        {{ form_errors(form) }}
+
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    {{ form_label(form.operation) }}
+                    {{ form_widget(form.operation ,{ 'attr': {'class': 'form-control'} }) }}
+                    {{ form_errors(form.operation) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    {{ form_label(form.nombre) }}
+                    {{ form_widget(form.nombre ,{ 'attr': {'class': 'form-control'} }) }}
+                    {{ form_errors(form.nombre) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    {{ form_label(form.typeRegle, 'Type de règle') }}
+                    {{ form_widget(form.typeRegle ,{ 'attr': {'class': 'form-control'} }) }}
+                    {{ form_errors(form.typeRegle) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group type-regle caracteristique">
+                <div class="col-xs-4">
+                    {{ form_label(form.caracteristique) }}
+                    {{ form_widget(form.caracteristique ,{ 'id': 'caracteristique', 'attr': {'class': 'form-control'} }) }}
+                    {{ form_errors(form.caracteristique) }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group type-regle typeAttaque">
+                <div class="col-xs-4">
+                    {{ form_label(form.typeAttaque) }}
+                    {{ form_widget(form.typeAttaque ,{ 'id': 'typeAttaque', 'attr': {'class': 'form-control'} }) }}
+                    {{ form_errors(form.typeAttaque) }}
+                </div>
+            </div>
+        </div>
+
+        {{ form_rest(form) }}
+
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4">
+                    <input type="submit" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </form>
 {% endblock %}

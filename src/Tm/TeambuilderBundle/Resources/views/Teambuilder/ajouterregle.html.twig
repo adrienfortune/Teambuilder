@@ -10,7 +10,6 @@
 <h1>Ajouter une régle :</h1>
 
 <form method="post" {{ form_enctype(form) }} class="tm_teambuilder_regle_ajouter">
-    {% block test %}
     {{ form_errors(form) }}
 
     <div class="row">
@@ -41,19 +40,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="form-group typeRegle tm_teambuilderbundle_regle_caracteristique">
+        <div class="form-group type-regle caracteristique">
             <div class="col-xs-4">
-                {{ form_label(form.caracteristique) }}
-                {{ form_widget(form.caracteristique ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_label(form.caracteristique, 'Caractéristique') }}
+                {{ form_widget(form.caracteristique ,{ 'id': 'caracteristique', 'attr': {'class': 'form-control'} }) }}
                 {{ form_errors(form.caracteristique) }}
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="form-group typeRegle tm_teambuilderbundle_regle_typeAttaque">
+        <div class="form-group type-regle typeAttaque">
             <div class="col-xs-4">
                 {{ form_label(form.typeAttaque) }}
-                {{ form_widget(form.typeAttaque ,{ 'attr': {'class': 'form-control'} }) }}
+                {{ form_widget(form.typeAttaque ,{ 'id': 'typeAttaque', 'attr': {'class': 'form-control'} }) }}
                 {{ form_errors(form.typeAttaque) }}
             </div>
         </div>
@@ -69,5 +68,4 @@
         </div>
     </div>
 </form>
-    {% endblock %}
 {% endblock %}

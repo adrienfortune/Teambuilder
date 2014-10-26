@@ -87,9 +87,11 @@ class TeambuilderController extends Controller
 
             if( $this->container->get('security.context')->isGranted('IS_AUTHENTICATED_REMEMBERED') ){
                 $listeRegles = $regleRepository->getReglesUtilisateurActuel($this->container->get('security.context')->getToken()->getUser()->getId());
+                var_dump($listeRegles);
             }
             else {
                 $listeRegles = $regleRepository->getReglesPubliques();
+                var_dump($listeRegles);
             }
 
             $listeChampions =  $championRepository->findAll();

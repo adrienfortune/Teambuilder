@@ -1,14 +1,13 @@
 <div class="row text-center teambuilder">
     <div class="col-md-2 {{ monEquipe }}-team my-team">
         <div class="row">
-            <p>
-                Equipe
+                <h3>Equipe
                 {% if monEquipe == 'blue' %}
                     bleu
                 {% else %}
                     violette
                 {% endif %}
-            </p>
+                </h3>
         </div>
         <div class="row">
             {% for i in 0..4 %}
@@ -17,7 +16,7 @@
                         <a class="pick-champion" data-id-champion="{{ i }}"></a>
                         <div class="champion-role">
                             <label for="role">Rôle :</label>
-                            <select name="role">
+                            <select name="role" class="form-control">
                                 {% for role in listeRoles %}
                                     <option value="{{ role.code }}">{{ role.libelle }}</option>
                                 {% endfor %}
@@ -29,7 +28,7 @@
             {% endfor %}
         </div>
         <div class="row">
-            Champions bannis
+            <h3>Bannis</h3>
             {% for i in 0..2 %}
                 <div class="col-md-12">
                     <div class="thumbnail">
@@ -55,12 +54,13 @@
     <div class="col-md-2 {{ equipeAdverse }}-team">
         <div class="row">
             <p>
-                Equipe
+                <h3>Equipe
                 {% if equipeAdverse == 'blue' %}
                     bleu
                 {% else %}
                     violette
                 {% endif %}
+                </h3>
             </p>
         </div>
         <div class="row">
@@ -73,7 +73,7 @@
             {% endfor %}
         </div>
         <div class="row">
-            Champions bannis
+            <h3>Bannis</h3>
             {% for i in 0..2 %}
                 <div class="col-md-8">
                     <div class="thumbnail">

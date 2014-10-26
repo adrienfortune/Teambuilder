@@ -177,18 +177,26 @@
         })
     }
 
-    if($('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle[option!=null]')) {
-        var valeurRegle = $('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle').val();
-        $(".tm_teambuilderbundle_regle_" + valeurRegle).show();
+    if($("#tm_teambuilderbundle_regle_typeRegle option:selected").val() != "") {
+        var valeurRegle = $('#tm_teambuilderbundle_regle_typeRegle option:selected').val();
+        $("." + valeurRegle).show();
+        console.log($("#tm_teambuilderbundle_regle_typeRegle option:selected").val());
+    }
+    else if($(".tm_teambuilder_regle_modifier .type-regle select[value!='']").val() != "") {
+        $(".tm_teambuilder_regle_modifier .type-regle select[value!='']").show();
+        var idTypeRegle = $(".tm_teambuilder_regle_modifier .type-regle select[value!='']").attr('id');
+        console.log("zqddz");
+
+        $('.' + idTypeRegle).show();
+        $("#tm_teambuilderbundle_regle_typeRegle option[value='"+ idTypeRegle +"']").attr('selected', true);
     }
 
-    $('.tm_teambuilder_regle_ajouter #tm_teambuilderbundle_regle_typeRegle').change(function() {
+    $('#tm_teambuilderbundle_regle_typeRegle').change(function() {
        var valeurRegle = $(this).val();
-        console.log(valeurRegle);
-        $('.typeRegle').hide();
-        $(".typeRegle option[value='']").attr('selected', true);
+        $('.type-regle').hide();
+        $(".type-regle option[value='']").attr('selected', true);
         if(null != valeurRegle){
-            $(".tm_teambuilderbundle_regle_" + valeurRegle).show();
+            $("." + valeurRegle).show();
         }
 
     });
