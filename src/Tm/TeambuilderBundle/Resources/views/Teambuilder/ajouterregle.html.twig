@@ -2,7 +2,7 @@
 {% extends "TmTeambuilderBundle::layout.html.twig" %}
 
 {% block title %}
-    Ajouter - {{ parent() }}
+    Ajouter des règles personnalisées
 {% endblock %}
 
 {% block tmteambuilder_body %}
@@ -10,7 +10,7 @@
 <h1>Ajouter une régle :</h1>
 
 <form method="post" {{ form_enctype(form) }} class="tm_teambuilder_regle_ajouter">
-
+    {% block test %}
     {{ form_errors(form) }}
 
     <div class="row">
@@ -69,5 +69,5 @@
         </div>
     </div>
 </form>
-
+    {% endblock %}
 {% endblock %}

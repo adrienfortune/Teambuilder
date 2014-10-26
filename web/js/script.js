@@ -137,7 +137,7 @@
         $.ajax ({
             type: 'POST',
             dataType: "json",
-            url: "appliquer",
+            url: "",
             data: {'equipe':monEquipe},
             async: false,
             success: function(data){
