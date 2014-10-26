@@ -357,9 +357,9 @@ class Regle
 
                 break;
         }
-        
+
         if ($prisEnCompte && $testCritere) {
-            $this->count++;
+            $this->count ++;
         }
 
         return $testCritere;
@@ -375,11 +375,11 @@ class Regle
 
         switch ($this->operation->getCode()) {
             case Operation::TYPE_AU_MOINS :
-                    return ($this->count + 1) >= $this->getNombre();
+                return $this->count <= $this->getNombre();
             case Operation::TYPE_AU_PLUS :
-                return ($this->count + 1) <= $this->getNombre();
+                return $this->count >= $this->getNombre();
             case Operation::TYPE_EGAL :
-                return ($this->count + 1) == $this->getNombre();
+                return $this->count == $this->getNombre();
         }
 
         return false;

@@ -91,6 +91,12 @@ class TeamBuilder
             }
         }
 
+        foreach ($this->listeRegles as $regle) {
+            if(!$regle->testNombreOccurences()) {
+                return false;
+            }
+
+        }
         return $isOptimale;
     }
 

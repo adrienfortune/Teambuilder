@@ -194,7 +194,6 @@
             url: "getsuggestionchampion",
             data: JSON.stringify(historique),
             success: function(data){
-                console.log('test');
                 if( getSuggestion == true) {
                     $('.champion-list .item-champion').removeClass('suggest');
 
@@ -207,16 +206,13 @@
                 else {
 
                     if(data.isEquipeOptimale) {
-                        console.log('test2');
                         $('.message').text('');
                         $('.message').append('Votre équipe est optimale selon vos règles');
                     }
                     else {
-                        console.log('test3');
                         $('.message').text('');
-                        $('.message').append('Votre équipe n\'est optimale selon vos règles');
-                        $('.message').removeClass('alert-succes');
-                        $('.message').addClass('alert-error');
+                        $('.message').append('Votre équipe n\'est  pas optimale selon vos règles');
+                        $('.message').removeClass('alert-success').addClass('alert-danger');
                     }
                 }
             }
