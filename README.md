@@ -1,3 +1,5 @@
+# Bonne année !
+
 Symfony Standard Edition
 ========================
 
