@@ -2,6 +2,10 @@ tm_teambuilder_index:
     path:  /
     defaults: { _controller: TmTeambuilderBundle:Teambuilder:index }
 
+tm_teambuilder_creer_equipe:
+    path:  /creer-une-equipe
+    defaults: { _controller: TmTeambuilderBundle:Teambuilder:creerequipe }
+
 tm_teambuilder_champion_lister:
     path:  /champion/lister
     defaults: { _controller: TmTeambuilderBundle:Teambuilder:listerchampion }

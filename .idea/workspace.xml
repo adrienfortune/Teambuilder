@@ -26,126 +26,7 @@
     <favorites_list name="Code" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ajouterregle.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="54" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1292">
-              <folding>
-                <marker date="1414328681700" expanded="true" signature="271:2297" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="322:623" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="355:612" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="390:597" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="645:937" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="678:926" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="713:911" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="959:1277" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="992:1266" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1027:1251" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1299:1689" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1359:1678" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1394:1663" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1711:2062" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1767:2051" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="1802:2036" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="2112:2289" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="2145:2278" placeholder="..." />
-                <marker date="1414328681700" expanded="true" signature="2180:2263" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="23" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="26" selection-start="7608" selection-end="7608" vertical-scroll-proportion="-15.5" vertical-offset="3184" max-vertical-offset="4267">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Regle.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Regle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="343" column="29" selection-start="7931" selection-end="7931" vertical-scroll-proportion="0.0" vertical-offset="3808" max-vertical-offset="6817">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="73" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="398" selection-end="398" vertical-scroll-proportion="0.24260958" vertical-offset="0" max-vertical-offset="981">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeamBuilder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Regles/TeamBuilder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="48" selection-start="2019" selection-end="2019" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="3961">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeambuilderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="57" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="12274">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Security/login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-              <folding>
-                <element signature="e#287#310#0" expanded="true" />
-                <element signature="e#2008#2034#0" expanded="true" />
-                <marker date="1414335075121" expanded="true" signature="362:1983" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="464:858" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="501:843" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="540:824" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="884:1249" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="921:1234" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="960:1215" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1275:1673" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1312:1658" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1351:1639" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1394:1616" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1699:1971" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1736:1956" placeholder="..." />
-                <marker date="1414335075121" expanded="true" signature="1775:1937" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -292,46 +173,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="champions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,7 +228,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Laravel" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="recentsLimit" value="5" />
@@ -496,13 +337,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -517,16 +358,16 @@
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20357142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -555,9 +396,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ProfileFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="39" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1105">
-          <folding />
-        </state>
+        <state line="38" column="39" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Exception/AuthenticationException.php">
@@ -572,30 +411,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.059134107" vertical-offset="56" max-vertical-offset="1003">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.059134107" vertical-offset="56" max-vertical-offset="1003" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserEvents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.31875" vertical-offset="306" max-vertical-offset="3281">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.31875" vertical-offset="306" max-vertical-offset="3281" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Entity/Utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224">
-          <folding />
-        </state>
+        <state line="12" column="2" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="0" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="13" column="38" selection-start="0" selection-end="995" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/layout.html.twig">
@@ -607,12 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="66" selection-start="2998" selection-end="3034" vertical-scroll-proportion="0.8052083" vertical-offset="536" max-vertical-offset="1496">
-          <folding>
-            <element signature="e#1191#1229#0" expanded="false" />
-            <element signature="e#2997#3035#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="92" column="66" selection-start="2998" selection-end="3034" vertical-scroll-proportion="0.8052083" vertical-offset="536" max-vertical-offset="1496" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormInterface.php">
@@ -637,23 +463,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/ChangePasswordFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="60" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1224">
-          <folding />
-        </state>
+        <state line="36" column="60" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/checkEmail.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
@@ -663,9 +483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Controller/ProfileController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="78" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.22083333" vertical-offset="298" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="45" column="78" selection-start="1476" selection-end="1476" vertical-scroll-proportion="0.22083333" vertical-offset="298" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Resetting/request_content.html.twig">
@@ -675,19 +493,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Controller/SecurityController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15086646" vertical-offset="39" max-vertical-offset="1020">
-          <folding>
-            <element signature="e#7#259#0" expanded="false" />
-            <element signature="e#298#343#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="11" column="14" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15086646" vertical-offset="39" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Form/errors.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="19" selection-start="28" selection-end="43" vertical-scroll-proportion="0.017329255" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
+        <state line="1" column="19" selection-start="28" selection-end="43" vertical-scroll-proportion="0.017329255" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Profile/edit_content.html.twig">
@@ -717,187 +528,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/formulaire.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3656" selection-end="3656" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1836">
-          <folding />
-        </state>
+        <state line="99" column="0" selection-start="3656" selection-end="3656" vertical-scroll-proportion="0.0" vertical-offset="855" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="37" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="9" column="37" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/getteambuilderajax.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="27" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="30" column="27" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding>
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1413884206632" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Form/RegleType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="57" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="35" column="57" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/EquipeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="535" selection-end="535" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="20" column="29" selection-start="535" selection-end="535" vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/UserBundle/Resources/views/Security/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
           <folding>
-            <element signature="e#287#310#0" expanded="true" />
-            <element signature="e#2008#2034#0" expanded="true" />
-            <marker date="1414335075121" expanded="true" signature="362:1983" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="464:858" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="501:843" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="540:824" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="884:1249" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="921:1234" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="960:1215" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1275:1673" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1312:1658" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1351:1639" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1394:1616" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1699:1971" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1736:1956" placeholder="..." />
-            <marker date="1414335075121" expanded="true" signature="1775:1937" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1414335075121" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="23" selection-start="875" selection-end="875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="986">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/RegleRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="856" selection-end="862" vertical-scroll-proportion="0.584375" vertical-offset="0" max-vertical-offset="960">
-          <folding />
-        </state>
+        <state line="33" column="35" selection-start="856" selection-end="862" vertical-scroll-proportion="0.584375" vertical-offset="0" max-vertical-offset="960" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="215" selection-end="215" vertical-scroll-proportion="0.103975534" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
+        <state line="6" column="28" selection-start="215" selection-end="215" vertical-scroll-proportion="0.103975534" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="7" selection-start="844" selection-end="844" vertical-scroll-proportion="0.38124362" vertical-offset="0" max-vertical-offset="1700">
           <folding>
-            <element signature="e#1213#1233#0" expanded="true" />
-            <element signature="e#1727#1748#0" expanded="true" />
-            <element signature="e#1887#1914#0" expanded="true" />
-            <element signature="e#2053#2077#0" expanded="true" />
-            <element signature="e#2275#2298#0" expanded="true" />
-            <element signature="e#2424#2454#0" expanded="true" />
+            <element signature="e#1213#1233#0" expanded="false" />
+            <element signature="e#1727#1748#0" expanded="false" />
+            <element signature="e#1887#1914#0" expanded="false" />
+            <element signature="e#2053#2077#0" expanded="false" />
+            <element signature="e#2275#2298#0" expanded="false" />
+            <element signature="e#2424#2454#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/modifierregle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.35881755" vertical-offset="311" max-vertical-offset="1292">
-          <folding>
-            <element signature="e#13#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="54" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1292">
-          <folding>
-            <marker date="1414328681700" expanded="true" signature="271:2297" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="322:623" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="355:612" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="390:597" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="645:937" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="678:926" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="713:911" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="959:1277" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="992:1266" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1027:1251" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1299:1689" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1359:1678" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1394:1663" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1711:2062" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1767:2051" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="1802:2036" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="2112:2289" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="2145:2278" placeholder="..." />
-            <marker date="1414328681700" expanded="true" signature="2180:2263" placeholder="..." />
-          </folding>
-        </state>
+        <state line="39" column="18" selection-start="1390" selection-end="1390" vertical-scroll-proportion="0.35881755" vertical-offset="311" max-vertical-offset="1292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/Equipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="30" selection-start="1563" selection-end="1563" vertical-scroll-proportion="1.2212029" vertical-offset="179" max-vertical-offset="2720">
-          <folding />
-        </state>
+        <state line="81" column="30" selection-start="1563" selection-end="1563" vertical-scroll-proportion="1.2212029" vertical-offset="179" max-vertical-offset="2720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Entity/ChampionRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="26" selection-start="7608" selection-end="7608" vertical-scroll-proportion="-15.5" vertical-offset="3184" max-vertical-offset="4267">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="981" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+        <state line="14" column="22" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="57" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="12274">
           <folding />
         </state>
       </provider>
@@ -909,9 +646,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Controller/TeambuilderController.php">
+    <entry file="file://$PROJECT_DIR$/src/Tm/TeambuilderBundle/Resources/views/Teambuilder/ajouterregle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="57" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.0" vertical-offset="1390" max-vertical-offset="12274">
+        <state line="13" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.06931702" vertical-offset="153" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="23" selection-start="875" selection-end="875" vertical-scroll-proportion="0.8786952" vertical-offset="5" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="211" column="26" selection-start="7608" selection-end="7608" vertical-scroll-proportion="0.4108053" vertical-offset="3184" max-vertical-offset="4267">
           <folding />
         </state>
       </provider>
@@ -925,14 +676,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="73" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="136">
+        <state line="2" column="73" selection-start="80" selection-end="80" vertical-scroll-proportion="0.03465851" vertical-offset="0" max-vertical-offset="981">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="398" selection-end="398" vertical-scroll-proportion="0.24260958" vertical-offset="0" max-vertical-offset="981">
+        <state line="8" column="26" selection-start="264" selection-end="264" vertical-scroll-proportion="0.13863404" vertical-offset="0" max-vertical-offset="981">
           <folding />
         </state>
       </provider>

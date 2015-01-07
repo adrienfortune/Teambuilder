@@ -44,8 +44,42 @@
             {% for champion in listeChampions %}
                 <div class="item-champion col-md-3 selectionnable suggest" data-id-champion="{{ champion.id }}" data-name-champion="{{ champion.nom }}" style="display: none; left: 0; top: 0;">
                     <div class="thumbnail">
-                        <a class="pick-champion"><img
-                                    src="{{ asset(champion.webPath) }}" title="{{ champion.nom }}"></a>
+                        <div class="champion-card">
+                            <div class="front">
+                                <a class="pick-champion">
+                                    <img src="{{ asset(champion.webPath) }}" title="{{ champion.nom }}">
+                                </a>
+                            </div>
+                            <div class="back">
+                                <a class="champion-stat">
+                                    <p class="nom"><b>{{ champion.nom }}</b></p>
+                                    <span class="attaque">
+                                        <span>
+                                            <img src="/uploads/img/icones/attaque.png" title="Attaque">
+                                        </span>
+                                        <span class="bar" data-length="{{ champion.attaque }}"></span>
+                                    </span>
+                                     <span class="defense">
+                                        <span>
+                                            <img src="/uploads/img/icones/defense.png" title="Défense">
+                                        </span>
+                                        <span class="bar" data-length="{{ champion.dafense }}"></span>
+                                    </span>
+                                     <span class="magie">
+                                        <span>
+                                            <img src="/uploads/img/icones/magie.png" title="Magie">
+                                        </span>
+                                        <span class="bar" data-length="{{ champion.magie }}"></span>
+                                    </span>
+                                    <span class="difficulte">
+                                        <span>
+                                            <img src="/uploads/img/icones/difficulte.png" title="Difficulté">
+                                        </span>
+                                        <span class="bar" data-length="{{ champion.difficulte }}"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
@@ -75,7 +109,7 @@
         <div class="row">
             <h3>Bannis</h3>
             {% for i in 0..2 %}
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <div class="thumbnail">
                         <a class="banned-champion" data-id-champion="{{ i }}"></a>
                     </div>

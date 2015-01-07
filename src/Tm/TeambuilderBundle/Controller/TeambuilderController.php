@@ -29,6 +29,11 @@ class TeambuilderController extends Controller
 
     public function indexAction()
     {
+        return $this->render('TmTeambuilderBundle:Teambuilder:index.html.twig');
+    }
+
+    public function creerequipeAction()
+    {
         $request = $this->get('request');
         if($request->isXmlHttpRequest()) {
 
@@ -68,7 +73,7 @@ class TeambuilderController extends Controller
         }
         else {
 
-            return $this->render('TmTeambuilderBundle:Teambuilder:index.html.twig');
+            return $this->render('TmTeambuilderBundle:Teambuilder:creerequipe.html.twig');
         }
     }
 
@@ -214,7 +219,7 @@ class TeambuilderController extends Controller
 
         if($request->getMethod() == 'POST') {
             $form->submit($request);
-
+            if($this->getTypeAttaque() && getTypeAttque )
             if($form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($champion);

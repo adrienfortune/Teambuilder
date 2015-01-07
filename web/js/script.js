@@ -51,7 +51,7 @@
 
 
         var idChampion     = $this.data('id-champion');
-        var $champion      = $('img', this);
+        var $champion      = $('.pick-champion img', this);
         var couleurEquipe         = $(".form-search-champion input[type='radio']:checked").val();
         var divDestination = '.' + tourDeLEquipe(compteur).toLowerCase() + '-team';
 
@@ -242,4 +242,25 @@
         }
 
     });
+
+    //$(".champion-card").live('hover',function() {
+    //    $(".bar", $(this)).each(function() {
+    //        console.log($(this));
+    //        $(this)
+    //            .data("origWidth", $(this).width())
+    //            .width(0)
+    //            .animate({
+    //                width: $(this).data("origWidth")
+    //            }, 1000);
+    //    });
+    //});
+    //$(".bar").each(function() {
+    //    console.log($(this));
+    //    $(this)
+    //        .data("origWidth", $(this).width())
+    //        .width(0)
+    //        .animate({
+    //            width: $(this).data("origWidth")
+    //        }, 100);
+    //});
 })(jQuery);

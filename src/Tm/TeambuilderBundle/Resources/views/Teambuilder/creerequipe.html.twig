@@ -1,0 +1,27 @@
+{% extends "TmTeambuilderBundle::layout.html.twig" %}
+    {% block title %}
+        Créateur d'équipe optimisée - League of Legends
+    {% endblock %}
+
+    {% block tmteambuilder_body %}
+        <div class="message alert alert-success"> Sélectionnez votre équipe </div>
+
+        <div class="col-md-12">
+            <div class="row form-search-champion">
+                <div class="col-md-12">
+                    <div class="form-inline">
+                        <label for="team">Sélection de mon équipe :</label>
+                        <label><input name="team" type="radio" value="BLUE"> Bleu</label>
+                        <label><input name="team" type="radio" value="VIOLET"> Violet</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="form-group">
+                            <input type="search search-input" class="form-control champion-search-input" placeholder="Chercher un champion...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
