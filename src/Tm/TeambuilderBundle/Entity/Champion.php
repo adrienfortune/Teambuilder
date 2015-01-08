@@ -101,6 +101,34 @@ class Champion
      */
     private $date;
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="ATTAQUE", type="string", length=64, nullable=false)
+     */
+    private $attaque;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="DEFENSE", type="string", length=64, nullable=false)
+     */
+    private $defense;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="MAGIE", type="string", length=64, nullable=false)
+     */
+    private $magie;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="DIFFICULTE", type="string", length=64, nullable=false)
+     */
+    private $difficulte;
+
     private $file;
 
     private $oldFile;
@@ -171,6 +199,98 @@ class Champion
     public function getNomFichierImage()
     {
         return $this->nomFichierImage;
+    }
+
+    /**
+     *  Get attaque
+     *
+     *  @return integer
+     */
+    public function getAttaque()
+    {
+        return $this->attaque;
+    }
+
+    /**
+     * Set attaque
+     *
+     * @param string $attaque
+     * @return Champion
+     */
+    public function setAttaque($attaque)
+    {
+        $this->attaque = $attaque;
+
+        return $this;
+    }
+
+    /**
+     *  Get defense
+     *
+     *  @return integer
+     */
+    public function getDefense()
+    {
+        return $this->defense;
+    }
+
+    /**
+     * Set defense
+     *
+     * @param string $defense
+     * @return Champion
+     */
+    public function setDefense($defense)
+    {
+        $this->defense = $defense;
+
+        return $this;
+    }
+
+    /**
+     *  Get magie
+     *
+     *  @return integer
+     */
+    public function getMagie()
+    {
+        return $this->magie;
+    }
+
+    /**
+     * Set magie
+     *
+     * @param string $magie
+     * @return Champion
+     */
+    public function setMagie($magie)
+    {
+        $this->magie = $magie;
+
+        return $this;
+    }
+
+    /**
+     *  Get difficulte
+     *
+     *  @return integer
+     */
+    public function getDifficulte()
+    {
+        return $this->difficulte;
+    }
+
+    /**
+     * Set difficulte
+     *
+     * @param string $difficulte
+     * @return Champion
+     */
+    public function setDifficulte($difficulte)
+    {
+        $this->difficulte = $difficulte;
+
+        return $this;
     }
 
     /**

@@ -245,6 +245,11 @@
 
     //$(".champion-card").live('hover',function() {
     //    $(".bar", $(this)).each(function() {
+    //        var t = $(this).data("lenght")
+    //    });
+    //});
+    //$(".champion-card").live('hover',function() {
+    //    $(".bar", $(this)).each(function() {
     //        console.log($(this));
     //        $(this)
     //            .data("origWidth", $(this).width())
