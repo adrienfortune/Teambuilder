@@ -1,3 +1,7 @@
 <?php
 
-$container->setParameter('database_host', getenv('MYSQL_PORT_3306_TCP_ADDR'));
+$container->setParameter('database_host', getenv('MYSQL_HOST'));
+$container->setParameter('database_name', getenv('MYSQL_DATABASE'));
+$container->setParameter('database_user', getenv('MYSQL_USER'));
+$container->setParameter('database_password', getenv('MYSQL_PASSWD'));
+$container->setParameter('secret', getenv('SECRET_KEY'));
