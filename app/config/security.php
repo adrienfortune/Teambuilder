@@ -35,7 +35,7 @@ $container->loadFromExtension('security', [
                     'target' => '/',
                 ],
                 'remember_me' => [
-                    'key' => getenv('SECRET_KEY'),
+                    'key' => true,
                 ],
             ],
         ],
